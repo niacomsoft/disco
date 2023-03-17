@@ -6,9 +6,12 @@
 
 ![Disco][icon]
 
+![架构介绍](docs/../assets/Architect.jpg)
+
 ----
 
 ## 介绍 Introduction
+
 
 - **摘要 Summary**
   - **开发环境 Development Environment**
