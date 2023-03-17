@@ -1,0 +1,39 @@
+{
+  "name": "@niacomsoft/disco",
+  "version": "1.0.0-build.0",
+  "description": "\"Distributed Configuration Management Service\" based on the .NET platform!",
+  "main": "index.js",
+  "repository": "git@codeup.aliyun.com:niacom/disco.git",
+  "author": {
+    "name": "Wang Yucai",
+    "email": "netowls-studio@outlook.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  },
+  "scripts": {
+    "release:build-dryrun": "standard-version -p build -i CHANGELOG.md --dry-run",
+    "release:build": "standard-version -p build -i CHANGELOG.md",
+    "release:alpha-dryrun": "standard-version -p alpha -i CHANGELOG.md --dry-run",
+    "release:alpha": "standard-version -p alpha -i CHANGELOG.md",
+    "release:beta-dryrun": "standard-version -p beta -i CHANGELOG.md --dry-run",
+    "release:beta": "standard-version -p beta -i CHANGELOG.md",
+    "release:preview-dryrun": "standard-version -p preview -i CHANGELOG.md --dry-run",
+    "release:preview": "standard-version -p preview -i CHANGELOG.md",
+    "release:patch-dryrun": "standard-version -r patch -i CHANGELOG.md --dry-run",
+    "release:patch": "standard-version -r patch -i CHANGELOG.md",
+    "release:minor-dryrun": "standard-version -r minor -i CHANGELOG.md --dry-run",
+    "release:minor": "standard-version -r minor -i CHANGELOG.md",
+    "release:major-dryrun": "standard-version -r major -i CHANGELOG.md --dry-run",
+    "release:major": "standard-version -r major -i CHANGELOG.md",
+    "version:prerelease": "npm version prerelease --no-git-tag-version --workspaces",
+    "version:prepatch": "npm version prepatch --no-git-tag-version --workspaces",
+    "version:preminor": "npm version preminor --no-git-tag-version --workspaces",
+    "version:premajor": "npm version premajor --no-git-tag-version --workspaces",
+    "version:patch": "npm version patch --no-git-tag-version --workspaces",
+    "version:minor": "npm version minor --no-git-tag-version --workspaces",
+    "version:major": "npm version major --no-git-tag-version --workspaces"
+  }
+}
