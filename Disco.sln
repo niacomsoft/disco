@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Profile", "Profile", "{B64B3D2C-D330-4CE9-834C-DD293809DD04}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		src\Directory.Build.props = src\Directory.Build.props
 	EndProjectSection
 EndProject
 Global

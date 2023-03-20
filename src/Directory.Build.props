@@ -1,0 +1,29 @@
+<Project>
+    <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+    <PropertyGroup>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+        <Title>分布式配置管理服务 Disco</Title>
+        <Authors>Wang Yucai</Authors>
+        <Company>Wang Yucai (NetOwls-Studio@Outlook.com)</Company>
+        <Product>Disco</Product>
+        <PackageProjectUrl>https://github.com/niacomsoft/disco</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/niacomsoft/disco</RepositoryUrl>
+        <PackageTags>.NET, .NET Framework, .NET Standard, .NET Core, Disco</PackageTags>
+        <VersionPrefix>1.0.0</VersionPrefix>
+        <VersionSuffix>0</VersionSuffix>
+        <AssemblyVersion>$(VersionPrefix).$(VersionSuffix)</AssemblyVersion>
+        <FileVersion>$(AssemblyVersion)</FileVersion>
+        <Version Condition="'$(Configuration)' == 'Debug'">$(VersionPrefix)-Debug.$(VersionSuffix)</Version>
+        <Version Condition="'$(Configuration)' == 'Release'">$(VersionPrefix).$(VersionSuffix)</Version>
+        <Copyright>COPYRIGHT © 2023 WANG YUCAI. ALL RIGHTS RESERVED.</Copyright>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="../../README.md" CopyToOutputDirectory="PreserveNewest"></Content>
+		<Content Include="../../LICENSE" CopyToOutputDirectory="PreserveNewest"></Content>
+		<Content Include="../../assets/Icons/Disco-64.png" CopyToOutputDirectory="PreserveNewest"></Content>
+	</ItemGroup>
+</Project>
