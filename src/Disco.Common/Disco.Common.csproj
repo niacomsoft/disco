@@ -67,7 +67,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Infrastructures\" />
       <Folder Include="Utilities\" />
     </ItemGroup>
 
