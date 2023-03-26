@@ -61,11 +61,65 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 “{0}” 小时前 的本地化字符串。
+        /// </summary>
+        public static string A_day_ago {
+            get {
+                return ResourceManager.GetString("A_day_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 “{0}” 分钟前 的本地化字符串。
+        /// </summary>
+        public static string An_hour_ago {
+            get {
+                return ResourceManager.GetString("An_hour_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 yyyy年MM月dd日 的本地化字符串。
+        /// </summary>
+        public static string DateTime_formatter {
+            get {
+                return ResourceManager.GetString("DateTime_formatter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Disco 抛出了一个未处理的异常。 的本地化字符串。
         /// </summary>
         public static string DiscoException_default_message {
             get {
                 return ResourceManager.GetString("DiscoException_default_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 刚刚 的本地化字符串。
+        /// </summary>
+        public static string Just_now {
+            get {
+                return ResourceManager.GetString("Just_now", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 MM月dd日 的本地化字符串。
+        /// </summary>
+        public static string Same_year {
+            get {
+                return ResourceManager.GetString("Same_year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 “{0}” 天前 的本地化字符串。
+        /// </summary>
+        public static string Several_days_ago {
+            get {
+                return ResourceManager.GetString("Several_days_ago", resourceCulture);
             }
         }
     }
