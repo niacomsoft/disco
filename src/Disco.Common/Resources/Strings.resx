@@ -124,4 +124,7 @@
     <value>yyyy年MM月dd日</value>
     <comment>日期时间格式化</comment>
   </data>
+  <data name="ArgumentNullException_null_encoding" xml:space="preserve">
+    <value>错误的文本编码 “{0}”。</value>
+  </data>
 </root>

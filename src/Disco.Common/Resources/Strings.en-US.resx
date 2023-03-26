@@ -118,4 +118,7 @@
   <data name="DateTime_formatter" xml:space="preserve">
     <value>dd/MM/yyyy</value>
   </data>
+  <data name="ArgumentNullException_null_encoding" xml:space="preserve">
+    <value>Bad text encoding '{0}'.</value>
+  </data>
 </root>

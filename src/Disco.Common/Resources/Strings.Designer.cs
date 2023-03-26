@@ -79,6 +79,15 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 错误的文本编码 “{0}”。 的本地化字符串。
+        /// </summary>
+        public static string ArgumentNullException_null_encoding {
+            get {
+                return ResourceManager.GetString("ArgumentNullException_null_encoding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 yyyy年MM月dd日 的本地化字符串。
         /// </summary>
         public static string DateTime_formatter {
