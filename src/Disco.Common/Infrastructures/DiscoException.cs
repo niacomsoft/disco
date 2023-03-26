@@ -1,6 +1,6 @@
 ﻿// COPYRIGHT © 2023 WANG YUCAI. ALL RIGHTS RESERVED. LICENSED UNDER THE MIT LICENSE. SEE LICENSE FILE IN THE PROJECT ROOT FOR FULL LICENSE INFORMATION.
 
-namespace Niacomsoft.Disco.Infrastructures
+namespace Niacomsoft.Disco
 {
     using System;
 
