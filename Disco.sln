@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disco.Common", "src\Disco.Common\Disco.Common.csproj", "{5BEB7EB2-92F7-408F-86A1-D164CE6E92D0}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Profile", "Profile", "{B64B3D2C-D330-4CE9-834C-DD293809DD04}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		src\Directory.Build.props = src\Directory.Build.props
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disco.Common", "src\Disco.Common\Disco.Common.csproj", "{D7E845B4-30EA-4A0E-8DF2-3CEA10609696}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5BEB7EB2-92F7-408F-86A1-D164CE6E92D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5BEB7EB2-92F7-408F-86A1-D164CE6E92D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5BEB7EB2-92F7-408F-86A1-D164CE6E92D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5BEB7EB2-92F7-408F-86A1-D164CE6E92D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E845B4-30EA-4A0E-8DF2-3CEA10609696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E845B4-30EA-4A0E-8DF2-3CEA10609696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E845B4-30EA-4A0E-8DF2-3CEA10609696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E845B4-30EA-4A0E-8DF2-3CEA10609696}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -22,7 +22,7 @@ namespace Niacomsoft.Disco.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Strings {
+    internal class Strings {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Niacomsoft.Disco.Resources {
         ///   返回此类使用的缓存的 ResourceManager 实例。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
+        internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Niacomsoft.Disco.Resources.Strings", typeof(Strings).Assembly);
@@ -51,84 +51,12 @@ namespace Niacomsoft.Disco.Resources {
         ///   使用此强类型资源类的所有资源查找执行重写。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 “{0}” 小时前 的本地化字符串。
-        /// </summary>
-        public static string A_day_ago {
-            get {
-                return ResourceManager.GetString("A_day_ago", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 “{0}” 分钟前 的本地化字符串。
-        /// </summary>
-        public static string An_hour_ago {
-            get {
-                return ResourceManager.GetString("An_hour_ago", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 错误的文本编码 “{0}”。 的本地化字符串。
-        /// </summary>
-        public static string ArgumentNullException_null_encoding {
-            get {
-                return ResourceManager.GetString("ArgumentNullException_null_encoding", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 yyyy年MM月dd日 的本地化字符串。
-        /// </summary>
-        public static string DateTime_formatter {
-            get {
-                return ResourceManager.GetString("DateTime_formatter", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Disco 抛出了一个未处理的异常。 的本地化字符串。
-        /// </summary>
-        public static string DiscoException_default_message {
-            get {
-                return ResourceManager.GetString("DiscoException_default_message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 刚刚 的本地化字符串。
-        /// </summary>
-        public static string Just_now {
-            get {
-                return ResourceManager.GetString("Just_now", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 MM月dd日 的本地化字符串。
-        /// </summary>
-        public static string Same_year {
-            get {
-                return ResourceManager.GetString("Same_year", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 “{0}” 天前 的本地化字符串。
-        /// </summary>
-        public static string Several_days_ago {
-            get {
-                return ResourceManager.GetString("Several_days_ago", resourceCulture);
             }
         }
     }
