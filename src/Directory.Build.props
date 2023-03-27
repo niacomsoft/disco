@@ -19,6 +19,7 @@
         <Version Condition="'$(Configuration)' == 'Release'">$(VersionPrefix).$(VersionSuffix)</Version>
         <Copyright>COPYRIGHT © 2023 WANG YUCAI. ALL RIGHTS RESERVED.</Copyright>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
     </PropertyGroup>
 
 	<ItemGroup>
