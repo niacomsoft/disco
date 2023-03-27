@@ -103,4 +103,7 @@
   <data name="DiscoException_default_exception_message" xml:space="preserve">
     <value>'Disco' threw an unhandled exception.</value>
   </data>
+  <data name="ArgumentNullException_default_exception_message" xml:space="preserve">
+    <value>參數 “@{0}” 不能為 NULL 值。</value>
+  </data>
 </root>

@@ -103,4 +103,7 @@
   <data name="DiscoException_default_exception_message" xml:space="preserve">
     <value>“Disco” 抛出了一个未处理的异常。</value>
   </data>
+  <data name="ArgumentNullException_default_exception_message" xml:space="preserve">
+    <value>参数 “@{0}” 不能为 NULL 值。</value>
+  </data>
 </root>

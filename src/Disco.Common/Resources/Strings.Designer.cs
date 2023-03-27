@@ -61,6 +61,15 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 参数 “@{0}” 不能为 NULL 值。 的本地化字符串。
+        /// </summary>
+        internal static string ArgumentNullException_default_exception_message {
+            get {
+                return ResourceManager.GetString("ArgumentNullException_default_exception_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 “Disco” 抛出了一个未处理的异常。 的本地化字符串。
         /// </summary>
         internal static string DiscoException_default_exception_message {
