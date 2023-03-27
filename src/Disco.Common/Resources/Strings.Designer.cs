@@ -61,6 +61,15 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 “Disco” 抛出了一个未处理的异常。 的本地化字符串。
+        /// </summary>
+        internal static string DiscoException_default_exception_message {
+            get {
+                return ResourceManager.GetString("DiscoException_default_exception_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 资源标识名称 “resKey” 不能为 NULL、Empty 或空格符。 的本地化字符串。
         /// </summary>
         internal static string SR_null_or_empty_resource_key {

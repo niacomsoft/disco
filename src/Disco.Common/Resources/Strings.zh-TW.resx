@@ -100,4 +100,7 @@
   <data name="SR_null_or_empty_resource_key" xml:space="preserve">
     <value>資源標識名稱 “resKey” 不能為 NULL、Empty 或空格符。</value>
   </data>
+  <data name="DiscoException_default_exception_message" xml:space="preserve">
+    <value>“Disco” 拋出了一個未處理的異常。</value>
+  </data>
 </root>

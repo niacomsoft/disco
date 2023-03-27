@@ -100,4 +100,7 @@
   <data name="SR_null_or_empty_resource_key" xml:space="preserve">
     <value>The resource identifier name 'resKey' cannot be NULL, Empty, or a space character.</value>
   </data>
+  <data name="DiscoException_default_exception_message" xml:space="preserve">
+    <value>'Disco' threw an unhandled exception.</value>
+  </data>
 </root>
