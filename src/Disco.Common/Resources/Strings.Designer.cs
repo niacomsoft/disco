@@ -59,5 +59,14 @@ namespace Niacomsoft.Disco.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   查找类似 资源标识名称 “resKey” 不能为 NULL、Empty 或空格符。 的本地化字符串。
+        /// </summary>
+        internal static string SR_null_or_empty_resource_key {
+            get {
+                return ResourceManager.GetString("SR_null_or_empty_resource_key", resourceCulture);
+            }
+        }
     }
 }
