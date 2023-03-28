@@ -12,6 +12,54 @@ namespace Niacomsoft.Disco.Resources
     public static class SR
     {
         /// <summary>
+        ///     使用资源标识名称为 <paramref name="resKey" /> 的格式化。
+        /// </summary>
+        /// <param name="resKey">
+        ///     资源标识名称。
+        /// </param>
+        /// <param name="args">
+        ///     格式化参数数组。
+        /// </param>
+        /// <returns>
+        ///     格式化字符串。
+        /// </returns>
+        /// <exception cref="MissingManifestResourceException">
+        /// </exception>
+        /// <exception cref="MissingSatelliteAssemblyException">
+        /// </exception>
+        /// <exception cref="FormatException">
+        /// </exception>
+        /// <seealso cref="GetString(string, CultureInfo)" />
+        /// <seealso cref="string.Format(string, object[])" />
+        public static string Format(string resKey, params object[] args) => string.Format(GetString(resKey), args);
+
+        /// <summary>
+        ///     使用资源标识名称为 <paramref name="resKey" /> 的格式化。
+        /// </summary>
+        /// <param name="resKey">
+        ///     资源标识名称。
+        /// </param>
+        /// <param name="culture">
+        ///     指定的文化区域。
+        /// </param>
+        /// <param name="args">
+        ///     格式化参数数组。
+        /// </param>
+        /// <returns>
+        ///     格式化字符串。
+        /// </returns>
+        /// <exception cref="MissingManifestResourceException">
+        /// </exception>
+        /// <exception cref="MissingSatelliteAssemblyException">
+        /// </exception>
+        /// <exception cref="FormatException">
+        /// </exception>
+        /// <seealso cref="CultureInfo" />
+        /// <seealso cref="GetString(string, CultureInfo)" />
+        /// <seealso cref="string.Format(string, object[])" />
+        public static string Format(string resKey, CultureInfo culture, params object[] args) => string.Format(GetString(resKey, culture), args);
+
+        /// <summary>
         ///     获取指定文化区域设置中标识名称为 <paramref name="resKey" /> 的字符串资源值。
         /// </summary>
         /// <param name="resKey">

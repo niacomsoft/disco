@@ -23,7 +23,7 @@ namespace Niacomsoft.Disco
         public static void IfArgumentNull(object parameterValue, string parameterName)
         {
             if (parameterValue is null)
-                throw new ArgumentNullException(parameterName, string.Format(SR.GetString("DiscoException_default_exception_message"), parameterName));
+                throw new ArgumentNullException(parameterName, SR.Format("DiscoException_default_exception_message", parameterName));
         }
     }
 }
