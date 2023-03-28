@@ -9,7 +9,7 @@ namespace System
     /// <summary>
     ///     为 <see cref="string" /> 类型提供的扩展方法。
     /// </summary>
-    public static class StringExtensions
+    public static partial class StringExtensions
     {
         /// <summary>
         ///     使用编码 <paramref name="encoding" /> 获取字符串 <paramref name="s" /> 的字节数组。当 <paramref name="s" /> 等于 <c> null </c> 时，将返回 <c> null </c>。
@@ -47,6 +47,45 @@ namespace System
         /// <seealso cref="Encoding.UTF8" />
         /// <seealso cref="StringExtensions.GetBytes(string, Encoding)" />
         public static byte[] GetBytes(this string s) => StringExtensions.GetBytes(s, Encoding.UTF8);
+
+        /// <summary>
+        ///     当使用方法 <paramref name="condition" /> 校验字符串 <paramref name="s" /> 返回 <c> true </c> 时，返回 <paramref name="s" />；否则返回 <paramref name="default" />。
+        /// </summary>
+        /// <param name="s">
+        ///     需要校验的字符串。
+        /// </param>
+        /// <param name="condition">
+        ///     校验方法。
+        /// </param>
+        /// <param name="default">
+        ///     当使用方法 <paramref name="condition" /> 校验字符串 <paramref name="s" /> 返回 <c> true </c> 时的返回值。
+        /// </param>
+        /// <returns>
+        ///     当使用方法 <paramref name="condition" /> 校验字符串 <paramref name="s" /> 返回 <c> true </c> 时，返回 <paramref name="s" />；否则返回 <paramref name="default" />。
+        /// </returns>
+        /// <seealso cref="Func{T, TResult}" />
+        /// <exception cref="ArgumentNullException">
+        ///     当 <paramref name="condition" /> 等于 <c> null </c> 时，将引发此类型的异常。
+        /// </exception>
+        public static string If(this string s, Func<string, bool> condition, string @default)
+        {
+            ExceptionHelper.IfArgumentNull(condition, nameof(condition));
+            return condition(s) ? s : @default;
+        }
+
+        /// <summary>
+        ///     当 <paramref name="s" /> 等于 <c> null </c> 时返回 <paramref name="default" />；否则返回 <paramref name="s" />。
+        /// </summary>
+        /// <param name="s">
+        ///     需要校验的字符串。
+        /// </param>
+        /// <param name="default">
+        ///     当 <paramref name="s" /> 等于 <c> null </c> 时返回的字符串。
+        /// </param>
+        /// <returns>
+        ///     当 <paramref name="s" /> 等于 <c> null </c> 时返回 <paramref name="default" />；否则返回 <paramref name="s" />。
+        /// </returns>
+        public static string IfNull(this string s, string @default) => s is null ? @default : s;
 
         /// <summary>
         ///     当 <paramref name="s" /> 等于 <c> null </c> 或 <see cref="string.Empty" /> 时，返回 <paramref name="default" />；否则返回 <paramref name="s" />。
