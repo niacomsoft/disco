@@ -1,14 +1,15 @@
 ﻿// COPYRIGHT © 2023 WANG YUCAI. ALL RIGHTS RESERVED. LICENSED UNDER THE MIT LICENSE. SEE LICENSE FILE IN THE PROJECT ROOT FOR FULL LICENSE INFORMATION.
 
-namespace Niacomsoft.Disco
+namespace System
 {
-    using System;
     using System.Text;
 
+    using Niacomsoft.Disco;
+
     /// <summary>
-    ///     提供了 <see cref="String" /> 相关的工具方法。
+    ///     为 <see cref="string" /> 类型提供的扩展方法。
     /// </summary>
-    public static class StringUtilities
+    public static class StringExtensions
     {
         /// <summary>
         ///     使用编码 <paramref name="encoding" /> 获取字符串 <paramref name="s" /> 的字节数组。当 <paramref name="s" /> 等于 <c> null </c> 时，将返回 <c> null </c>。
@@ -27,7 +28,7 @@ namespace Niacomsoft.Disco
         ///     当 <paramref name="encoding" /> 等于 <c> null </c> 时，将引发此类型的异常。
         /// </exception>
         /// <seealso cref="Encoding" />
-        public static byte[] GetBytes(string s, Encoding encoding)
+        public static byte[] GetBytes(this string s, Encoding encoding)
         {
             ExceptionHelper.IfArgumentNull(encoding, nameof(encoding));
             return s is null ? null : encoding.GetBytes(s);
@@ -44,8 +45,8 @@ namespace Niacomsoft.Disco
         /// </returns>
         /// <seealso cref="UTF8Encoding" />
         /// <seealso cref="Encoding.UTF8" />
-        /// <seealso cref="StringUtilities.GetBytes(string, Encoding)" />
-        public static byte[] GetBytes(string s) => StringUtilities.GetBytes(s, Encoding.UTF8);
+        /// <seealso cref="StringExtensions.GetBytes(string, Encoding)" />
+        public static byte[] GetBytes(this string s) => StringExtensions.GetBytes(s, Encoding.UTF8);
 
         /// <summary>
         ///     当 <paramref name="s" /> 等于 <c> null </c> 或 <see cref="string.Empty" /> 时，返回 <paramref name="default" />；否则返回 <paramref name="s" />。
@@ -60,7 +61,7 @@ namespace Niacomsoft.Disco
         ///     当 <paramref name="s" /> 等于 <c> null </c> 或 <see cref="string.Empty" /> 时，返回 <paramref name="default" />；否则返回 <paramref name="s" />。
         /// </returns>
         /// <seealso cref="string.IsNullOrEmpty(string)" />
-        public static string IfNullOrEmpty(string s, string @default) => string.IsNullOrEmpty(s) ? @default : s;
+        public static string IfNullOrEmpty(this string s, string @default) => string.IsNullOrEmpty(s) ? @default : s;
 
         /// <summary>
         ///     当 <paramref name="s" /> 等于 <c> null </c> 或 <see cref="string.Empty" /> 或空格符时，返回 <paramref name="default" />；否则返回 <paramref name="s" />。
@@ -76,6 +77,6 @@ namespace Niacomsoft.Disco
         /// </returns>
         /// <seealso cref="string.IsNullOrEmpty(string)" />
         /// <seealso cref="string.IsNullOrWhiteSpace(string)" />
-        public static string IfNullOrWhitespace(string s, string @default) => string.IsNullOrWhiteSpace(s) ? @default : s;
+        public static string IfNullOrWhitespace(this string s, string @default) => string.IsNullOrWhiteSpace(s) ? @default : s;
     }
 }

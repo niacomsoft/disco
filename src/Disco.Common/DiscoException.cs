@@ -28,7 +28,7 @@ namespace Niacomsoft.Disco
         /// <param name="message">
         ///     描述错误的消息。
         /// </param>
-        public DiscoException(string message) : base(StringUtilities.IfNullOrWhitespace(message, sr_exceptionMessage))
+        public DiscoException(string message) : base(StringExtensions.IfNullOrWhitespace(message, sr_exceptionMessage))
         {
         }
 
@@ -41,7 +41,7 @@ namespace Niacomsoft.Disco
         /// <param name="innerException">
         ///     导致当前异常的异常；如果未指定内部异常，则是一个 null 引用（在 Visual Basic 中为 <see langword="Nothing" />）。
         /// </param>
-        public DiscoException(string message, Exception innerException) : base(StringUtilities.IfNullOrWhitespace(message, sr_exceptionMessage), innerException)
+        public DiscoException(string message, Exception innerException) : base(StringExtensions.IfNullOrWhitespace(message, sr_exceptionMessage), innerException)
         {
         }
     }
