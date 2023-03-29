@@ -13,12 +13,12 @@ namespace Niacomsoft.Disco
     [Serializable]
     public class DiscoException : Exception
     {
-        private static readonly string sr_exceptionMessage = SR.GetString("DiscoException_default_exception_message");
+        private static readonly Lazy<string> sr_lazyExceptionMessage = new Lazy<string>(() => SR.GetString("DiscoException_default_exception_message"), true);
 
         /// <summary>
         ///     初始化 <see cref="DiscoException" /> 类的新实例。
         /// </summary>
-        public DiscoException() : base(sr_exceptionMessage)
+        public DiscoException() : base(sr_lazyExceptionMessage.Value)
         {
         }
 
@@ -28,7 +28,7 @@ namespace Niacomsoft.Disco
         /// <param name="message">
         ///     描述错误的消息。
         /// </param>
-        public DiscoException(string message) : base(StringExtensions.IfNullOrWhitespace(message, sr_exceptionMessage))
+        public DiscoException(string message) : base(StringExtensions.IfNullOrWhitespace(message, sr_lazyExceptionMessage.Value))
         {
         }
 
@@ -41,7 +41,7 @@ namespace Niacomsoft.Disco
         /// <param name="innerException">
         ///     导致当前异常的异常；如果未指定内部异常，则是一个 null 引用（在 Visual Basic 中为 <see langword="Nothing" />）。
         /// </param>
-        public DiscoException(string message, Exception innerException) : base(StringExtensions.IfNullOrWhitespace(message, sr_exceptionMessage), innerException)
+        public DiscoException(string message, Exception innerException) : base(StringExtensions.IfNullOrWhitespace(message, sr_lazyExceptionMessage.Value), innerException)
         {
         }
     }
