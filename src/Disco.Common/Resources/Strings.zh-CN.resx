@@ -106,4 +106,7 @@
   <data name="ArgumentNullException_default_exception_message" xml:space="preserve">
     <value>参数 “@{0}” 不能为 NULL 值。</value>
   </data>
+  <data name="InvalidCastException_cannot_convert_string_to_type" xml:space="preserve">
+    <value>无法将字符串 “{0}” 转换成 “{1}” 类型值。</value>
+  </data>
 </root>

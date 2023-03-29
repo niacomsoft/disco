@@ -7,3 +7,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Disco.DiscoException.#ctor")]
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Disco.DiscoException.#ctor(System.String)")]
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Disco.DiscoException.#ctor(System.String,System.Exception)")]
+[assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Niacomsoft.Disco.ExceptionHelper.InvalidStringParse``1(System.String)")]

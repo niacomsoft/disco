@@ -79,6 +79,15 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 无法将字符串 “{0}” 转换成 “{1}” 类型值。 的本地化字符串。
+        /// </summary>
+        internal static string InvalidCastException_cannot_convert_string_to_type {
+            get {
+                return ResourceManager.GetString("InvalidCastException_cannot_convert_string_to_type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 资源标识名称 “resKey” 不能为 NULL、Empty 或空格符。 的本地化字符串。
         /// </summary>
         internal static string SR_null_or_empty_resource_key {

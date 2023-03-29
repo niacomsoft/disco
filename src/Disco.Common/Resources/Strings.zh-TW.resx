@@ -104,6 +104,9 @@
     <value>“Disco” 拋出了一個未處理的異常。</value>
   </data>
   <data name="ArgumentNullException_default_exception_message" xml:space="preserve">
-    <value>Parameter '@{0}' cannot be NULL.</value>
+    <value>參數 “@{0}” 不能為 NULL 值。</value>
+  </data>
+  <data name="InvalidCastException_cannot_convert_string_to_type" xml:space="preserve">
+    <value>無法將字符串 “{0}” 轉換成 “{1}” 類型值。</value>
   </data>
 </root>

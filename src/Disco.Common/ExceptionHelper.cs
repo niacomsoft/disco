@@ -25,5 +25,13 @@ namespace Niacomsoft.Disco
             if (parameterValue is null)
                 throw new ArgumentNullException(parameterName, SR.Format("DiscoException_default_exception_message", parameterName));
         }
+
+        /// <summary>
+        /// 当尝试将字符串 <paramref name="s"/> 转换成 <typeparamref name="TTarget"/> 类型值或实例时，将引发一个 <see cref="InvalidCastException"/> 类型的异常。
+        /// </summary>
+        /// <typeparam name="TTarget">目标类型。</typeparam>
+        /// <param name="s">指定的字符串。</param>
+        public static void InvalidStringParse<TTarget>(string s) 
+            => throw new InvalidCastException(SR.Format("InvalidCastException_cannot_convert_string_to_type", s, typeof(TTarget).FullName));
     }
 }
