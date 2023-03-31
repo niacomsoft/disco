@@ -1,6 +1,6 @@
 {
   "name": "@niacomsoft/disco",
-  "version": "1.0.0-build.0",
+  "version": "0.0.1-build.0",
   "description": "\"Distributed Configuration Management Service\" based on the .NET platform!",
   "main": "index.js",
   "repository": "git@codeup.aliyun.com:niacom/disco.git",
