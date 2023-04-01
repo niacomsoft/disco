@@ -2,10 +2,25 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0; net20; netcoreapp3.1</TargetFrameworks>
-    <RootNamespace>Niacomsoft.Disco</RootNamespace>
+    <RootNamespace>Niacomsoft.Disco.Resources</RootNamespace>
     <AssemblyName>Disco.Resources</AssemblyName>
     <DocumentationFile>$(BaseOutputPath)/$(Configuration)/$(TargetFramework)/$(AssemblyName).xml</DocumentationFile>
     <Description>Distributed Configuration Management Service - Localization Support Resource Bundle</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Strings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
 
 </Project>

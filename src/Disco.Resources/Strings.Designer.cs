@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Niacomsoft.Disco {
+namespace Niacomsoft.Disco.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Niacomsoft.Disco {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Niacomsoft.Disco.Strings", typeof(Strings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Niacomsoft.Disco.Resources.Strings", typeof(Strings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,15 @@ namespace Niacomsoft.Disco {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 错误的资源名称 “@resourceName”。 的本地化字符串。
+        /// </summary>
+        internal static string ArgumentException_wrong_resource_name {
+            get {
+                return ResourceManager.GetString("ArgumentException_wrong_resource_name", resourceCulture);
             }
         }
     }
