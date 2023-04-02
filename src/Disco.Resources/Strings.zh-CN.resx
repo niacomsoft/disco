@@ -100,4 +100,7 @@
   <data name="ArgumentException_wrong_resource_name" xml:space="preserve">
     <value>错误的资源名称 “@resourceName”。</value>
   </data>
+  <data name="Exception_default_message" xml:space="preserve">
+    <value>“Disco” 抛出了一个未处理的运行时异常。</value>
+  </data>
 </root>

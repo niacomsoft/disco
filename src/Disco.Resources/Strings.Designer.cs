@@ -68,5 +68,14 @@ namespace Niacomsoft.Disco.Resources {
                 return ResourceManager.GetString("ArgumentException_wrong_resource_name", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查找类似 “Disco” 抛出了一个未处理的运行时异常。 的本地化字符串。
+        /// </summary>
+        internal static string Exception_default_message {
+            get {
+                return ResourceManager.GetString("Exception_default_message", resourceCulture);
+            }
+        }
     }
 }

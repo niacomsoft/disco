@@ -101,4 +101,8 @@
     <value>错误的资源名称 “@resourceName”。</value>
     <comment>当资源名称为 null、string.Empty 或空格符时抛出的异常信息</comment>
   </data>
+  <data name="Exception_default_message" xml:space="preserve">
+    <value>“Disco” 抛出了一个未处理的运行时异常。</value>
+    <comment>默认的异常消息</comment>
+  </data>
 </root>
