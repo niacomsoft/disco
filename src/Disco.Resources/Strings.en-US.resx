@@ -103,4 +103,7 @@
   <data name="Exception_default_message" xml:space="preserve">
     <value>'Disco' threw an unhandled runtime exception.</value>
   </data>
+  <data name="SafeValue_ifnull_safevalue_func" xml:space="preserve">
+    <value>No valid '@safeValue' - 'System.Func' delegate type provided.</value>
+  </data>
 </root>

@@ -103,4 +103,7 @@
   <data name="Exception_default_message" xml:space="preserve">
     <value>“Disco” 抛出了一个未处理的运行时异常。</value>
   </data>
+  <data name="SafeValue_ifnull_safevalue_func" xml:space="preserve">
+    <value>未提供有效的 “@safeValue” - “System.Func” 委托类型。</value>
+  </data>
 </root>

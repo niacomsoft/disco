@@ -77,5 +77,14 @@ namespace Niacomsoft.Disco.Resources {
                 return ResourceManager.GetString("Exception_default_message", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查找类似 未提供有效的 “@safeValue” - “System.Func” 委托类型。 的本地化字符串。
+        /// </summary>
+        internal static string SafeValue_ifnull_safevalue_func {
+            get {
+                return ResourceManager.GetString("SafeValue_ifnull_safevalue_func", resourceCulture);
+            }
+        }
     }
 }
