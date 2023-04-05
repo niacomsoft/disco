@@ -5,9 +5,8 @@
 namespace Niacomsoft.Disco
 {
     using System;
-    using System.Diagnostics.CodeAnalysis;
 
-    using Niacomsoft.Disco.Resources;
+    using Niacomsoft.Disco.Logging;
 
 #if NET30_OR_GREATER || NETCOREAPP || NETSTANDARD || NET
 
@@ -28,18 +27,12 @@ namespace Niacomsoft.Disco
         /// <returns>
         ///     可以记录在运行时日志的异常描述信息。
         /// </returns>
-        [SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>")]
         public static string GetLoggingMessage(this Exception exception, string causeReason)
         {
-            return SR.Format("ExceptionExtensions_get_logging_message",
-                             null,
-                             Guard.SafeGet(causeReason,
-                                           SR.Format("ExceptionExtensions_get_logging_message_no_cause_reason",
-                                                     null,
-                                                     exception.TargetSite.DeclaringType.FullName,
-                                                     exception.TargetSite.Name)),
-                             exception.GetType().FullName,
-                             exception.Message);
+            return new ExceptionLoggingMessageBuilder().WithException(exception)
+                                                       .WithCauseReason(causeReason)
+                                                       .Build()
+                                                       .ToString();
         }
     }
 
