@@ -15,9 +15,19 @@ namespace Niacomsoft.Disco.Objects.Serialization
         public const string Code = "code";
 
         /// <summary>
+        ///     描述字段名称。
+        /// </summary>
+        public const string Description = "description";
+
+        /// <summary>
         ///     显示名称字段名称。
         /// </summary>
         public const string DisplayName = "displayName";
+
+        /// <summary>
+        ///     描述是否可用状态的字段名称。
+        /// </summary>
+        public const string EnableState = "enabled";
 
         /// <summary>
         ///     友好名称字段名称。
@@ -30,6 +40,11 @@ namespace Niacomsoft.Disco.Objects.Serialization
         public const string Id = "id";
 
         /// <summary>
+        ///     多行描述字段名称。
+        /// </summary>
+        public const string MultiLineDescription = "descriptions";
+
+        /// <summary>
         ///     名称字段名称。
         /// </summary>
         public const string Name = "name";
@@ -38,5 +53,10 @@ namespace Niacomsoft.Disco.Objects.Serialization
         ///     开放标识字段名称。
         /// </summary>
         public const string OpenId = "openId";
+
+        /// <summary>
+        ///     描述是否被逻辑删除状态的字段名称。
+        /// </summary>
+        public const string RemoveState = "removed";
     }
 }
