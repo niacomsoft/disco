@@ -77,5 +77,23 @@ namespace Niacomsoft.Disco.Resources {
                 return ResourceManager.GetString("Exception_default_message", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查找类似 当 {0} 时，引发了一个 “{1}” 类型的异常：{2} 的本地化字符串。
+        /// </summary>
+        internal static string ExceptionExtensions_get_logging_message {
+            get {
+                return ResourceManager.GetString("ExceptionExtensions_get_logging_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 调用方法 “{0}:{1}” 的本地化字符串。
+        /// </summary>
+        internal static string ExceptionExtensions_get_logging_message_no_cause_reason {
+            get {
+                return ResourceManager.GetString("ExceptionExtensions_get_logging_message_no_cause_reason", resourceCulture);
+            }
+        }
     }
 }

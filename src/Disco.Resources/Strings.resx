@@ -105,4 +105,10 @@
     <value>“Disco” 抛出了一个未处理的运行时异常。</value>
     <comment>默认的异常消息</comment>
   </data>
+  <data name="ExceptionExtensions_get_logging_message" xml:space="preserve">
+    <value>当 {0} 时，引发了一个 “{1}” 类型的异常：{2}</value>
+  </data>
+  <data name="ExceptionExtensions_get_logging_message_no_cause_reason" xml:space="preserve">
+    <value>调用方法 “{0}:{1}”</value>
+  </data>
 </root>
