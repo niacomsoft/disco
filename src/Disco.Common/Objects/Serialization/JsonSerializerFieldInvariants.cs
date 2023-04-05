@@ -10,6 +10,11 @@ namespace Niacomsoft.Disco.Objects.Serialization
     public static class JsonSerializerFieldInvariants
     {
         /// <summary>
+        ///     编码字段名称。
+        /// </summary>
+        public const string Code = "code";
+
+        /// <summary>
         ///     标识字段名称。
         /// </summary>
         public const string Id = "id";
