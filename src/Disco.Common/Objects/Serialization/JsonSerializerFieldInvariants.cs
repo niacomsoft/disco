@@ -40,9 +40,19 @@ namespace Niacomsoft.Disco.Objects.Serialization
         public const string FriendlyName = "friendlyName";
 
         /// <summary>
+        ///     友好的修改时间字段名称。
+        /// </summary>
+        public const string FriendlyNameOfLastModified = "lastModified";
+
+        /// <summary>
         ///     标识字段名称。
         /// </summary>
         public const string Id = "id";
+
+        /// <summary>
+        ///     最后修改时间字段名称。
+        /// </summary>
+        public const string LastModified = "$last_modified";
 
         /// <summary>
         ///     多行描述字段名称。

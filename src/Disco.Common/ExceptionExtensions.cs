@@ -8,7 +8,7 @@ namespace Niacomsoft.Disco
 
     using Niacomsoft.Disco.Logging;
 
-#if NET30_OR_GREATER || NETCOREAPP || NETSTANDARD || NET
+#if NET40_OR_GREATER || NETCOREAPP || NETSTANDARD || NET
 
     /// <summary>
     ///     为 <see cref="Exception" /> 类型提供的扩展方法。
