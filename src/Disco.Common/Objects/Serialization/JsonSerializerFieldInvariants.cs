@@ -10,6 +10,11 @@ namespace Niacomsoft.Disco.Objects.Serialization
     public static class JsonSerializerFieldInvariants
     {
         /// <summary>
+        ///     描述是否可用状态的字段名称。
+        /// </summary>
+        public const string AvailableState = "available";
+
+        /// <summary>
         ///     编码字段名称。
         /// </summary>
         public const string Code = "code";
