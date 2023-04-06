@@ -109,4 +109,25 @@
   <data name="ExceptionExtensions_get_logging_message_no_cause_reason" xml:space="preserve">
     <value>調用方法 “{0}:{1}”</value>
   </data>
+  <data name="DateExtensions_just_now" xml:space="preserve">
+    <value>剛剛</value>
+  </data>
+  <data name="DateExtensions_a_few_minutes_ago" xml:space="preserve">
+    <value>{0}分鐘前</value>
+  </data>
+  <data name="DateExtensions_same_day" xml:space="preserve">
+    <value>HH:mm</value>
+  </data>
+  <data name="DateExtensions_a_few_hours_ago" xml:space="preserve">
+    <value>{0}小時前</value>
+  </data>
+  <data name="DateExtensions_few_days_ago" xml:space="preserve">
+    <value>{0}天前</value>
+  </data>
+  <data name="DateExtensions_same_year" xml:space="preserve">
+    <value>MM月dd日</value>
+  </data>
+  <data name="DateExtensions_full_date" xml:space="preserve">
+    <value>yyyy年MM月dd日</value>
+  </data>
 </root>

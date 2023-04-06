@@ -70,6 +70,69 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 {0}小时前 的本地化字符串。
+        /// </summary>
+        internal static string DateExtensions_a_few_hours_ago {
+            get {
+                return ResourceManager.GetString("DateExtensions_a_few_hours_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0}分钟前 的本地化字符串。
+        /// </summary>
+        internal static string DateExtensions_a_few_minutes_ago {
+            get {
+                return ResourceManager.GetString("DateExtensions_a_few_minutes_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0}天前 的本地化字符串。
+        /// </summary>
+        internal static string DateExtensions_few_days_ago {
+            get {
+                return ResourceManager.GetString("DateExtensions_few_days_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 yyyy年MM月dd日 的本地化字符串。
+        /// </summary>
+        internal static string DateExtensions_full_date {
+            get {
+                return ResourceManager.GetString("DateExtensions_full_date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 刚刚 的本地化字符串。
+        /// </summary>
+        internal static string DateExtensions_just_now {
+            get {
+                return ResourceManager.GetString("DateExtensions_just_now", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 HH:mm 的本地化字符串。
+        /// </summary>
+        internal static string DateExtensions_same_day {
+            get {
+                return ResourceManager.GetString("DateExtensions_same_day", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 MM月dd日 的本地化字符串。
+        /// </summary>
+        internal static string DateExtensions_same_year {
+            get {
+                return ResourceManager.GetString("DateExtensions_same_year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 “Disco” 抛出了一个未处理的运行时异常。 的本地化字符串。
         /// </summary>
         internal static string Exception_default_message {
