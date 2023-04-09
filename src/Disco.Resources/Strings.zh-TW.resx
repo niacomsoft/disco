@@ -130,4 +130,7 @@
   <data name="DateExtensions_full_date" xml:space="preserve">
     <value>yyyy年MM月dd日</value>
   </data>
+  <data name="ArgumentNullException_null_encoding" xml:space="preserve">
+    <value>無效的編碼 “@encoding”。</value>
+  </data>
 </root>

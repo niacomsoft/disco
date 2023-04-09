@@ -70,6 +70,15 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 无效的编码 “@encoding”。 的本地化字符串。
+        /// </summary>
+        internal static string ArgumentNullException_null_encoding {
+            get {
+                return ResourceManager.GetString("ArgumentNullException_null_encoding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 {0}小时前 的本地化字符串。
         /// </summary>
         internal static string DateExtensions_a_few_hours_ago {

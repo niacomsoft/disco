@@ -130,4 +130,7 @@
   <data name="DateExtensions_full_date" xml:space="preserve">
     <value>dd/MM/yyyy</value>
   </data>
+  <data name="ArgumentNullException_null_encoding" xml:space="preserve">
+    <value>Invalid encoding.</value>
+  </data>
 </root>
