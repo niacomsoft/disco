@@ -167,5 +167,14 @@ namespace Niacomsoft.Disco.Resources {
                 return ResourceManager.GetString("ExceptionExtensions_get_logging_message_no_cause_reason", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查找类似 无法将 “{0}” 类型转换成 “{1}” 类型值。 的本地化字符串。
+        /// </summary>
+        internal static string InvalidCastException_default_message {
+            get {
+                return ResourceManager.GetString("InvalidCastException_default_message", resourceCulture);
+            }
+        }
     }
 }

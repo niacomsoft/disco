@@ -133,4 +133,7 @@
   <data name="ArgumentNullException_null_encoding" xml:space="preserve">
     <value>无效的编码 “@encoding”。</value>
   </data>
+  <data name="InvalidCastException_default_message" xml:space="preserve">
+    <value>无法将 “{0}” 类型转换成 “{1}” 类型值。</value>
+  </data>
 </root>
