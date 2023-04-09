@@ -136,4 +136,7 @@
   <data name="InvalidCastException_default_message" xml:space="preserve">
     <value>Cannot convert '{0}' type to '{1}' type value.</value>
   </data>
+  <data name="ArgumentNullException_null_path_string" xml:space="preserve">
+    <value>Invalid path string.</value>
+  </data>
 </root>

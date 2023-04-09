@@ -136,4 +136,7 @@
   <data name="InvalidCastException_default_message" xml:space="preserve">
     <value>無法將 “{0}” 類型轉換成 “{1}” 類型值。</value>
   </data>
+  <data name="ArgumentNullException_null_path_string" xml:space="preserve">
+    <value>無效的路徑字符串。</value>
+  </data>
 </root>

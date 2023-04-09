@@ -79,6 +79,15 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 无效的路径字符串。 的本地化字符串。
+        /// </summary>
+        internal static string ArgumentNullException_null_path_string {
+            get {
+                return ResourceManager.GetString("ArgumentNullException_null_path_string", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 {0}小时前 的本地化字符串。
         /// </summary>
         internal static string DateExtensions_a_few_hours_ago {
