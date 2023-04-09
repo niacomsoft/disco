@@ -83,7 +83,12 @@ namespace Niacomsoft.Disco.IO
         ///     <see cref="DirectoryInfo" /> 类型的对象实例。
         /// </returns>
         /// <seealso cref="DirectoryInfo" />
+        /// <exception cref="System.Security.SecurityException">
+        /// </exception>
+        /// <exception cref="PathTooLongException">
+        /// </exception>
         [SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>")]
+        [SuppressMessage("Design", "Ex0200:Member is documented as throwing exception not documented on member in base or interface type", Justification = "<挂起>")]
         public virtual DirectoryInfo CreateDirectory()
         {
 #if NET40_OR_GREATER || NETCOREAPP || NETSTANDARD || NET
@@ -102,7 +107,16 @@ namespace Niacomsoft.Disco.IO
         ///     <see cref="FileInfo" /> 类型的对象实例。
         /// </returns>
         /// <seealso cref="FileInfo" />
+        /// <exception cref="System.Security.SecurityException">
+        /// </exception>
+        /// <exception cref="UnauthorizedAccessException">
+        /// </exception>
+        /// <exception cref="PathTooLongException">
+        /// </exception>
+        /// <exception cref="NotSupportedException">
+        /// </exception>
         [SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>")]
+        [SuppressMessage("Design", "Ex0200:Member is documented as throwing exception not documented on member in base or interface type", Justification = "<挂起>")]
         public FileInfo CreateFile()
         {
 #if NET40_OR_GREATER || NETCOREAPP || NETSTANDARD || NET
