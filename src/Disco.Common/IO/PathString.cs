@@ -51,6 +51,20 @@ namespace Niacomsoft.Disco.IO
         protected virtual string InternalPath { get; set; }
 
         /// <summary>
+        ///     从字符串 <paramref name="basePath" /> 创建一个 <see cref="IPathString" /> 类型的对象实例。
+        /// </summary>
+        /// <param name="basePath">
+        ///     基础路径字符串。
+        /// </param>
+        /// <returns>
+        ///     实现了 <see cref="IPathString" /> 类型接口的对象实例。
+        /// </returns>
+        /// <seealso cref="IPathString" />
+        /// <seealso cref="PathString" />
+        public static IPathString FromString(string basePath)
+            => new PathString(basePath);
+
+        /// <summary>
         ///     拼接字符串数组为路径字符串。
         /// </summary>
         /// <param name="pathParts">
