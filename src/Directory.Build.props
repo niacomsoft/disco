@@ -7,7 +7,7 @@
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <Version Condition="'$(Configuration)' == 'Debug'">$(VersionPrefix)</Version>
     <Version Condition="'$(Configuration)' == 'Release'">$(VersionPrefix).0</Version>
-    <PackageVersion>$(VersionPrefix)-Build.2023491732f7472c61</PackageVersion>
+    <PackageVersion>$(VersionPrefix)-Build.20234141834869260b4</PackageVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RepositoryType>Git</RepositoryType>
     <RepositoryUrl>https://github.com/niacomsoft/disco</RepositoryUrl>
