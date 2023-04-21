@@ -1,0 +1,10 @@
+{
+    "$schema": "DiscoConfigurationSection-Schema.json",
+    "discoConfiguration": {
+        "serverConfiguration": {
+            "localization": {
+                "culture": "zh-CN"
+            }
+        }
+    }
+}
