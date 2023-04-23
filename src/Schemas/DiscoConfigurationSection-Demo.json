@@ -15,7 +15,14 @@
             },
             "security": {
                 "defaultSecretKey": "-XTZ3vp93sRljU!W"
-            }
+            },
+            "connectionStrings": [
+               {
+                   "name": "1",
+                   "connectionString": "1",
+                   "readonlyConnectionStrings": ["1", "2"]
+               }
+            ]
         }
     }
 }

@@ -72,6 +72,34 @@
                                     "maxLength": 16
                                 }
                             }
+                        },
+                        "connectionStrings": {
+                            "description": "Disco Server Database ConnectionStrings Configuration",
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "required": ["name", "connectionString"],
+                                "properties": {
+                                    "name": {
+                                        "description": "The name of connection",
+                                        "type": "string",
+                                        "minLength": 1
+                                    },
+                                    "connectionString": {
+                                        "minLength": 1,
+                                        "description": "The connectoin string",
+                                        "type": "string"
+                                    },
+                                    "readonlyConnectionStrings": {
+                                        "description": "The connection strings for read-only slaves",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string",
+                                            "minLength": 1
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
