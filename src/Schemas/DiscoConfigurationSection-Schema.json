@@ -11,6 +11,7 @@
                 "serverConfiguration": {
                     "description": "Disco Server Application Configuration Root",
                     "type": "object",
+                    "required": ["security"],
                     "properties": {
                         "localization": {
                             "description": "Disco Server Localization Configuration",
@@ -21,6 +22,54 @@
                                     "$ref": "Definitions::CultureInfo",
                                     "description": "Disco Server Current-Culture Name",
                                     "default": "zh-CN"
+                                }
+                            }
+                        },
+                        "authentication": {
+                            "description": "Disco Server Authentication Configuration",
+                            "type": "object",
+                            "properties": {
+                                "authenticateRequired": {
+                                    "description": "Authentication is required",
+                                    "type": "boolean",
+                                    "default": true
+                                },
+                                "defaultAdministratorCredentials": {
+                                    "default": "The default administrator credentials",
+                                    "type": "object",
+                                    "required": ["userName"],
+                                    "properties": {
+                                        "userName": {
+                                            "description": "The user-name",
+                                            "type": "string",
+                                            "minLength": 2,
+                                            "default": "sa"
+                                        },
+                                        "initialPassword": {
+                                            "description": "The initial password",
+                                            "type": "string",
+                                            "minLength": 6,
+                                            "default": "disco@2023"
+                                        },
+                                        "changePasswordRequired": {
+                                            "description": "The initial password must be modified",
+                                            "type": "boolean",
+                                            "default": "true"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "security": {
+                            "description": "Disco Server Security Configuration",
+                            "type": "object",
+                            "required": ["defaultSecretKey"],
+                            "properties": {
+                                "defaultSecretKey": {
+                                    "description": "The secret-key for encryption configuration",
+                                    "type": "string",
+                                    "minLength": 16,
+                                    "maxLength": 16
                                 }
                             }
                         }

@@ -4,6 +4,17 @@
         "serverConfiguration": {
             "localization": {
                 "culture": "zh-CN"
+            },
+            "authentication": {
+                "authenticateRequired": true,
+                "defaultAdministratorCredentials": {
+                    "userName": "sa",
+                    "initialPassword": "disco@2023",
+                    "changePasswordRequired": true
+                }
+            },
+            "security": {
+                "defaultSecretKey": "-XTZ3vp93sRljU!W"
             }
         }
     }
