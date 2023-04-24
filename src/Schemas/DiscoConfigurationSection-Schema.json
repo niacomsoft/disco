@@ -100,6 +100,63 @@
                                     }
                                 }
                             }
+                        },
+                        "notification": {
+                            "description": "Disco Server Notification Configuration",
+                            "type": "object",
+                            "required": ["emailNotification"],
+                            "properties": {
+                                "emailNotification": {
+                                    "description": "Email notification configuration",
+                                    "type": "object",
+                                    "required": ["smtpServerUri", "smtpServerPort", "sender"],
+                                    "properties": {
+                                        "smtpServerUri": {
+                                            "description": "SMTP mail server host name",
+                                            "type": "string",
+                                            "minLength": 1
+                                        },
+                                        "smtpServerPort": {
+                                            "description": "SMTP mail server port number",
+                                            "type": "number",
+                                            "minimum": 1,
+                                            "maximum": 65535
+                                        },
+                                        "subjectTemplate": {
+                                            "description": "Notification email theme template",
+                                            "type": "string",
+                                            "default": "Disco 通知：{0}"
+                                        },
+                                        "sender": {
+                                            "description": "Notification sender configuration",
+                                            "type": "object",
+                                            "required": ["address", "userName", "password"],
+                                            "properties": {
+                                                "address": {
+                                                    "description": "Sender's e-mail address",
+                                                    "type": "string",
+                                                    "minLength": 1
+                                                },
+                                                "friendlyName": {
+                                                    "description": "Notify sender email address friendly name",
+                                                    "default": "Disco - Distributed Configuraton Service",
+                                                    "type": "string"
+                                                },
+                                                "userName": {
+                                                    "description": "Login email username",
+                                                    "type": "string",
+                                                    "minLength": 1
+                                                },
+                                                "password": {
+                                                    "description": "The password",
+                                                    "type": "string",
+                                                    "minLength": 8
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }

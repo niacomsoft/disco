@@ -22,7 +22,20 @@
                    "connectionString": "1",
                    "readonlyConnectionStrings": ["1", "2"]
                }
-            ]
+            ],
+            "notification": {
+                "emailNotification": {
+                    "smtpServerUri": "1",
+                    "smtpServerPort": 65535,
+                    "sender": {
+                        "address": "1",
+                        "friendlyName": "Disco - Distributed Configuration Service",
+                        "userName": "disco",
+                        "password": "12345678"
+                    },
+                    "subjectTemplate": "DISCO 通知：{0}"
+                }
+            }
         }
     }
 }
