@@ -139,4 +139,7 @@
   <data name="ArgumentNullException_null_path_string" xml:space="preserve">
     <value>无效的路径字符串。</value>
   </data>
+  <data name="SmtpSenderOptionsl_friendly_name" xml:space="preserve">
+    <value>分布式配置管理服务 Disco</value>
+  </data>
 </root>

@@ -185,5 +185,14 @@ namespace Niacomsoft.Disco.Resources {
                 return ResourceManager.GetString("InvalidCastException_default_message", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查找类似 分布式配置管理服务 Disco 的本地化字符串。
+        /// </summary>
+        internal static string SmtpSenderOptionsl_friendly_name {
+            get {
+                return ResourceManager.GetString("SmtpSenderOptionsl_friendly_name", resourceCulture);
+            }
+        }
     }
 }

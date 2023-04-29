@@ -139,4 +139,7 @@
   <data name="ArgumentNullException_null_path_string" xml:space="preserve">
     <value>Invalid path string.</value>
   </data>
+  <data name="SmtpSenderOptionsl_friendly_name" xml:space="preserve">
+    <value>Distributed configuration management service - Disco</value>
+  </data>
 </root>

@@ -8,4 +8,9 @@
     <Description>Distributed Configuration Management Service - Configuration Options Declarations.</Description>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Disco.Common\Disco.Common.csproj" />
+    <ProjectReference Include="..\Disco.Resources\Disco.Resources.csproj" />
+  </ItemGroup>
+
 </Project>
