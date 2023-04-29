@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0; net20</TargetFrameworks>
+    <RootNamespace>Niacomsoft.Disco.Configuration.Options</RootNamespace>
+    <AssemblyName>Disco.Common.Configuration.Options</AssemblyName>
+    <DocumentationFile>$(BaseOutputPath)/$(Configuration)/$(TargetFramework)/$(AssemblyName).xml</DocumentationFile>
+    <Description>Distributed Configuration Management Service - Configuration Options Declarations.</Description>
+  </PropertyGroup>
+
+</Project>
