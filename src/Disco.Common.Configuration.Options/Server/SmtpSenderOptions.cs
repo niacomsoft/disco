@@ -27,6 +27,23 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         public virtual string FriendlyName { get; set; }
 
         /// <summary>
+        ///     SMTP 电邮通知发信人相关的配置选项是否有效。
+        /// </summary>
+        /// <value>
+        ///     获取一个 <see cref="bool" /> 类型值，用于表示SMTP 电邮通知发信人相关的配置选项是否有效。
+        /// </value>
+        /// <seealso cref="StringEqualityComparer" />
+        public virtual bool IsValid
+        {
+            get
+            {
+                return !StringEqualityComparer.IsNullOrWhitespace(Address, EmptyStringCompareOptions.NullOrWhitespace)
+                       || !StringEqualityComparer.IsNullOrWhitespace(Password, EmptyStringCompareOptions.NullOrWhitespace)
+                       || !StringEqualityComparer.IsNullOrWhitespace(UserName, EmptyStringCompareOptions.NullOrWhitespace);
+            }
+        }
+
+        /// <summary>
         ///     发信人登录 SMTP 服务器的密码。
         /// </summary>
         /// <value>
