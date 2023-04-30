@@ -187,6 +187,15 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 错误的网络通信端口号数值范围。 的本地化字符串。
+        /// </summary>
+        internal static string NetworkCommunicationPort_invalid_port_number_range {
+            get {
+                return ResourceManager.GetString("NetworkCommunicationPort_invalid_port_number_range", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 分布式配置管理服务 Disco 的本地化字符串。
         /// </summary>
         internal static string SmtpSenderOptionsl_friendly_name {

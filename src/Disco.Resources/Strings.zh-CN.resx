@@ -142,4 +142,7 @@
   <data name="SmtpSenderOptionsl_friendly_name" xml:space="preserve">
     <value>分布式配置管理服务 Disco</value>
   </data>
+  <data name="NetworkCommunicationPort_invalid_port_number_range" xml:space="preserve">
+    <value>错误的网络通信端口号数值范围。</value>
+  </data>
 </root>

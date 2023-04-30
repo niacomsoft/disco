@@ -142,4 +142,7 @@
   <data name="SmtpSenderOptionsl_friendly_name" xml:space="preserve">
     <value>Distributed configuration management service - Disco</value>
   </data>
+  <data name="NetworkCommunicationPort_invalid_port_number_range" xml:space="preserve">
+    <value>Incorrect network communication port number value range.</value>
+  </data>
 </root>
