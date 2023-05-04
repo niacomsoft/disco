@@ -29,12 +29,12 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// </returns>
         /// <seealso cref="SmtpSenderOptions" />
         [SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>")]
-        public SmtpSenderOptions Build()
+        public virtual SmtpSenderOptions Build()
         {
             return new SmtpSenderOptions
             {
                 Address = m_address,
-                FriendlyName = Guard.SafeGet(m_friendlyName, SR.GetString("SmtpSenderOptionsl_friendly_name")),
+                FriendlyName = Guard.SafeGet(m_friendlyName, SR.GetString("SmtpSenderOptions_friendly_name")),
                 Password = m_password,
                 UserName = m_userName
             };
@@ -49,7 +49,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <returns>
         ///     <see cref="SmtpSenderOptionsBuilder" /> 类型的对象实例。
         /// </returns>
-        public SmtpSenderOptionsBuilder WithAddress(string addr)
+        public virtual SmtpSenderOptionsBuilder WithAddress(string addr)
         {
             m_address = addr;
             return this;
@@ -64,7 +64,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <returns>
         ///     <see cref="SmtpSenderOptionsBuilder" /> 类型的对象实例。
         /// </returns>
-        public SmtpSenderOptionsBuilder WithFriendlyName(string friendlyName)
+        public virtual SmtpSenderOptionsBuilder WithFriendlyName(string friendlyName)
         {
             m_friendlyName = friendlyName;
             return this;
@@ -79,7 +79,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <returns>
         ///     <see cref="SmtpSenderOptionsBuilder" /> 类型的对象实例。
         /// </returns>
-        public SmtpSenderOptionsBuilder WithPassword(string pwd)
+        public virtual SmtpSenderOptionsBuilder WithPassword(string pwd)
         {
             m_password = pwd;
             return this;
@@ -94,7 +94,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <returns>
         ///     <see cref="SmtpSenderOptionsBuilder" /> 类型的对象实例。
         /// </returns>
-        public SmtpSenderOptionsBuilder WithUserName(string userName)
+        public virtual SmtpSenderOptionsBuilder WithUserName(string userName)
         {
             m_userName = userName;
             return this;

@@ -139,10 +139,13 @@
   <data name="ArgumentNullException_null_path_string" xml:space="preserve">
     <value>無效的路徑字符串。</value>
   </data>
-  <data name="SmtpSenderOptionsl_friendly_name" xml:space="preserve">
+  <data name="SmtpSenderOptions_friendly_name" xml:space="preserve">
     <value>分佈式配置管理服務 Disco</value>
   </data>
   <data name="NetworkCommunicationPort_invalid_port_number_range" xml:space="preserve">
     <value>錯誤的網絡通信端口號數值範圍。</value>
+  </data>
+  <data name="EmailNotificationOptions_default_subject_template" xml:space="preserve">
+    <value>分佈式配寘服務郵件通知- {0}</value>
   </data>
 </root>

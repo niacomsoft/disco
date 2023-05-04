@@ -151,6 +151,15 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 分布式配置服务邮件通知 - {0} 的本地化字符串。
+        /// </summary>
+        internal static string EmailNotificationOptions_default_subject_template {
+            get {
+                return ResourceManager.GetString("EmailNotificationOptions_default_subject_template", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 “Disco” 抛出了一个未处理的运行时异常。 的本地化字符串。
         /// </summary>
         internal static string Exception_default_message {
@@ -198,9 +207,9 @@ namespace Niacomsoft.Disco.Resources {
         /// <summary>
         ///   查找类似 分布式配置管理服务 Disco 的本地化字符串。
         /// </summary>
-        internal static string SmtpSenderOptionsl_friendly_name {
+        internal static string SmtpSenderOptions_friendly_name {
             get {
-                return ResourceManager.GetString("SmtpSenderOptionsl_friendly_name", resourceCulture);
+                return ResourceManager.GetString("SmtpSenderOptions_friendly_name", resourceCulture);
             }
         }
     }

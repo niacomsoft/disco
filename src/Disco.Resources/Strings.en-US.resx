@@ -139,10 +139,13 @@
   <data name="ArgumentNullException_null_path_string" xml:space="preserve">
     <value>Invalid path string.</value>
   </data>
-  <data name="SmtpSenderOptionsl_friendly_name" xml:space="preserve">
+  <data name="SmtpSenderOptions_friendly_name" xml:space="preserve">
     <value>Distributed configuration management service - Disco</value>
   </data>
   <data name="NetworkCommunicationPort_invalid_port_number_range" xml:space="preserve">
     <value>Incorrect network communication port number value range.</value>
+  </data>
+  <data name="EmailNotificationOptions_default_subject_template" xml:space="preserve">
+    <value>Disco Email Notification - {0}</value>
   </data>
 </root>
