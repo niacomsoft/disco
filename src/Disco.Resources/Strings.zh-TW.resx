@@ -148,4 +148,10 @@
   <data name="EmailNotificationOptions_default_subject_template" xml:space="preserve">
     <value>分佈式配寘服務郵件通知- {0}</value>
   </data>
+  <data name="ConnectionStringOptions_invalid_name" xml:space="preserve">
+    <value>連接串名稱“Name”不允許為空。</value>
+  </data>
+  <data name="ConnectionStringOptions_invalid_connection_string" xml:space="preserve">
+    <value>連接串不允許為空。</value>
+  </data>
 </root>

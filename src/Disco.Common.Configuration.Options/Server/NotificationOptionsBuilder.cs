@@ -32,7 +32,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置 E-mail 通知配置。
         /// </summary>
-        /// <param name="options">
+        /// <param m_connectionName="options">
         ///     <see cref="EmailNotificationOptions" /> 类型的对象实例。
         /// </param>
         /// <returns>
@@ -48,7 +48,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置 E-mail 通知配置。
         /// </summary>
-        /// <param name="builder">
+        /// <param m_connectionName="builder">
         ///     构建 <see cref="EmailNotificationOptions" /> 类型的对象实例的方法。
         /// </param>
         /// <returns>

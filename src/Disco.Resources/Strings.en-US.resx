@@ -148,4 +148,10 @@
   <data name="EmailNotificationOptions_default_subject_template" xml:space="preserve">
     <value>Disco Email Notification - {0}</value>
   </data>
+  <data name="ConnectionStringOptions_invalid_name" xml:space="preserve">
+    <value>The connection string name 'Name Property' cannot be empty.</value>
+  </data>
+  <data name="ConnectionStringOptions_invalid_connection_string" xml:space="preserve">
+    <value>The connection string cannot be empty.</value>
+  </data>
 </root>

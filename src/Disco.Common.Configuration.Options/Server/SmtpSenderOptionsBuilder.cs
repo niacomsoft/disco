@@ -43,7 +43,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置发信人电邮地址。
         /// </summary>
-        /// <param name="addr">
+        /// <param m_connectionName="addr">
         ///     发信人电邮地址。
         /// </param>
         /// <returns>
@@ -58,7 +58,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置发信人在通知邮件中显示的友好名称。
         /// </summary>
-        /// <param name="friendlyName">
+        /// <param m_connectionName="friendlyName">
         ///     发信人在通知邮件中显示的友好名称。
         /// </param>
         /// <returns>
@@ -73,7 +73,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置发信人登录 SMTP 服务器的密码。
         /// </summary>
-        /// <param name="pwd">
+        /// <param m_connectionName="pwd">
         ///     发信人登录 SMTP 服务器的密码。
         /// </param>
         /// <returns>
@@ -88,7 +88,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置发信人登录 SMTP 服务器的用户名。
         /// </summary>
-        /// <param name="userName">
+        /// <param m_connectionName="userName">
         ///     发信人登录 SMTP 服务器的用户名。
         /// </param>
         /// <returns>

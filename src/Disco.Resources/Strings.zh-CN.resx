@@ -148,4 +148,10 @@
   <data name="EmailNotificationOptions_default_subject_template" xml:space="preserve">
     <value>分布式配置服务邮件通知 - {0}</value>
   </data>
+  <data name="ConnectionStringOptions_invalid_name" xml:space="preserve">
+    <value>连接串名称 “Name” 不允许为空。</value>
+  </data>
+  <data name="ConnectionStringOptions_invalid_connection_string" xml:space="preserve">
+    <value>连接串不允许为空。</value>
+  </data>
 </root>

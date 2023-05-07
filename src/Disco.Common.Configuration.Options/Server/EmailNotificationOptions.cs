@@ -24,7 +24,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
             {
                 return ReferenceEqualityComparer.NotNull(Sender)
                        && Sender.IsValid
-                       && !StringEqualityComparer.IsNullOrWhitespace(SmtpServerUri)
+                       && !StringEqualityComparer.IsNullOrWhitespace(SmtpServerUri, EmptyStringCompareOptions.NullOrWhitespace)
                        && SmtpServerPort >= NetworkCommunicationPort.Min.Value
                        && SmtpServerPort <= NetworkCommunicationPort.Max.Value;
             }

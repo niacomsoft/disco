@@ -57,7 +57,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置用于发布邮件通知的发信人 SMTP 服务器配置。
         /// </summary>
-        /// <param name="options">
+        /// <param m_connectionName="options">
         ///     发信人 SMTP 服务器配置选项。
         /// </param>
         /// <returns>
@@ -73,7 +73,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置用于发布邮件通知的发信人 SMTP 服务器配置。
         /// </summary>
-        /// <param name="builder">
+        /// <param m_connectionName="builder">
         ///     实现了 <see cref="IBuilder{T}" /> 类型接口的对象实例。
         /// </param>
         /// <returns>
@@ -88,7 +88,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置 SMTP 服务器通信端口号。
         /// </summary>
-        /// <param name="smtpServerPort">
+        /// <param m_connectionName="smtpServerPort">
         ///     通信端口号数字。
         /// </param>
         /// <returns>
@@ -103,7 +103,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置 SMTP 服务器通信端口号。
         /// </summary>
-        /// <param name="smtpServerPort">
+        /// <param m_connectionName="smtpServerPort">
         ///     SMTP 通信端口号。
         ///     <para> 实现了 <see cref="INetworkCommunicationPort" /> 类型接口的对象实例。 </para>
         /// </param>
@@ -117,7 +117,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置 SMTP 服务器主机 URI 地址。
         /// </summary>
-        /// <param name="uri">
+        /// <param m_connectionName="uri">
         ///     SMTP 服务器主机 URI 地址。
         /// </param>
         /// <returns>
@@ -144,7 +144,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置通知主题模板字符串。
         /// </summary>
-        /// <param name="template">
+        /// <param m_connectionName="template">
         ///     模板字符串。
         /// </param>
         /// <returns>

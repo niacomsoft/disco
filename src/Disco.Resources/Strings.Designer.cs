@@ -88,6 +88,24 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 连接串不允许为空。 的本地化字符串。
+        /// </summary>
+        internal static string ConnectionStringOptions_invalid_connection_string {
+            get {
+                return ResourceManager.GetString("ConnectionStringOptions_invalid_connection_string", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 连接串名称 “Name” 不允许为空。 的本地化字符串。
+        /// </summary>
+        internal static string ConnectionStringOptions_invalid_name {
+            get {
+                return ResourceManager.GetString("ConnectionStringOptions_invalid_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 {0}小时前 的本地化字符串。
         /// </summary>
         internal static string DateExtensions_a_few_hours_ago {
