@@ -11,7 +11,7 @@ namespace Niacomsoft.Disco
 #if NET45_OR_GREATER || NETCOREAPP || NETSTANDARD || NET
 
         /// <summary>
-        ///     当 <c> value.HasValue </c> 等于 <c> false </c> 时，返回 <paramref name="safeValue" />；否则返回 <c> value.Value </c>。
+        ///     当 <c> m_value.HasValue </c> 等于 <c> false </c> 时，返回 <paramref name="safeValue" />；否则返回 <c> m_value.Value </c>。
         /// </summary>
         /// <typeparam name="TValue">
         ///     值类型。
@@ -20,10 +20,10 @@ namespace Niacomsoft.Disco
         ///     可为空的 <typeparamref name="TValue" /> 类型的值。
         /// </param>
         /// <param name="safeValue">
-        ///     当 <c> value.HasValue </c> 等于 <c> false </c> 时返回的 <typeparamref name="TValue" /> 类型的值。
+        ///     当 <c> m_value.HasValue </c> 等于 <c> false </c> 时返回的 <typeparamref name="TValue" /> 类型的值。
         /// </param>
         /// <returns>
-        ///     当 <c> value.HasValue </c> 等于 <c> false </c> 时，返回 <paramref name="safeValue" />；否则返回 <c> value.Value </c>。
+        ///     当 <c> m_value.HasValue </c> 等于 <c> false </c> 时，返回 <paramref name="safeValue" />；否则返回 <c> m_value.Value </c>。
         /// </returns>
         /// <seealso cref="Nullable{T}" />
         public static TValue SafeGet<TValue>(TValue? value, TValue safeValue) where TValue : struct
