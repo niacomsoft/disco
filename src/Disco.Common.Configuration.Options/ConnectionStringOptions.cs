@@ -33,6 +33,8 @@ namespace Niacomsoft.Disco.Configuration.Options
         /// <value>
         ///     设置或获取一个字符串，用于表示连接串。
         /// </value>
+        /// <exception cref="ArgumentNullException">
+        /// </exception>
         [SuppressMessage("Design", "Ex0101:Member accessor may throw undocumented exception", Justification = "<挂起>")]
         public virtual string ConnectionString
         {
