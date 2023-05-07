@@ -4,12 +4,32 @@
 
 namespace Niacomsoft.Disco.Configuration.Options.Server
 {
+    using Niacomsoft.Disco.Net;
+
     /// <summary>
     ///     提供了电邮通知相关的配置选项。
     /// </summary>
     /// <seealso cref="ISectionOptions" />
     public class EmailNotificationOptions : ISectionOptions
     {
+        /// <summary>
+        ///     是否启用 E-mail 通知。
+        /// </summary>
+        /// <value>
+        ///     获取一个 <see cref="bool" /> 类型值，用于表示是否启用 E-mail 通知。
+        /// </value>
+        public virtual bool Enabled
+        {
+            get
+            {
+                return ReferenceEqualityComparer.NotNull(Sender)
+                       && Sender.IsValid
+                       && !StringEqualityComparer.IsNullOrWhitespace(SmtpServerUri)
+                       && SmtpServerPort >= NetworkCommunicationPort.Min.Value
+                       && SmtpServerPort <= NetworkCommunicationPort.Max.Value;
+            }
+        }
+
         /// <summary>
         ///     SMTP 通知发布者电邮配置。
         /// </summary>
