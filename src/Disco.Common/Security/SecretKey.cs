@@ -6,7 +6,6 @@ namespace Niacomsoft.Disco.Security
 {
     using System;
     using System.Diagnostics.CodeAnalysis;
-    using System.Text;
 
     using Niacomsoft.Disco.Resources;
 
@@ -16,6 +15,16 @@ namespace Niacomsoft.Disco.Security
     /// <seealso cref="ISecretKey" />
     public class SecretKey : ISecretKey
     {
+        /// <summary>
+        ///     默认的密钥生成程序。
+        /// </summary>
+        /// <seealso cref="ISecretKey" />
+        /// <seealso cref="SecretKey" />
+        /// <seealso cref="SecretKeySalt" />
+        /// <seealso cref="SecretKeyGeneratePolicy" />
+        public static readonly ISecretKey Default =
+            new SecretKey(SecretKeySalt.New(SecretKeyGeneratePolicy.IncludeNumbers | SecretKeyGeneratePolicy.IncludeLetters | SecretKeyGeneratePolicy.IncludeSymbols));
+
         /// <summary>
         ///     初始化 <see cref="SecretKey" /> 的新实例。
         /// </summary>
@@ -56,14 +65,15 @@ namespace Niacomsoft.Disco.Security
         /// <returns>
         ///     新的密钥。
         /// </returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException">
+        /// </exception>
         [SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>")]
         public virtual string New(int length)
         {
             Guard.TrueThrow<ArgumentOutOfRangeException>(length < 6, nameof(length), SR.GetString("SecretKey_invalid_length"));
             var keyChars = new char[length];
             ReorderAgain();
-            for(var index = 0; index < length; index++)
+            for (var index = 0; index < length; index++)
             {
                 keyChars[index] = Salt[Random.Next(Salt.Length)];
             }
