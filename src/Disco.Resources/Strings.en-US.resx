@@ -154,4 +154,7 @@
   <data name="ConnectionStringOptions_invalid_connection_string" xml:space="preserve">
     <value>The connection string cannot be empty.</value>
   </data>
+  <data name="SecretKey_invalid_length" xml:space="preserve">
+    <value>Invalid secret key length.</value>
+  </data>
 </root>

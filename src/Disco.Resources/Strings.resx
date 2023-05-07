@@ -162,4 +162,7 @@
   <data name="ConnectionStringOptions_invalid_connection_string" xml:space="preserve">
     <value>连接串不允许为空。</value>
   </data>
+  <data name="SecretKey_invalid_length" xml:space="preserve">
+    <value>错误的密钥长度。</value>
+  </data>
 </root>

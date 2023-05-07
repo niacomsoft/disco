@@ -154,4 +154,7 @@
   <data name="ConnectionStringOptions_invalid_connection_string" xml:space="preserve">
     <value>連接串不允許為空。</value>
   </data>
+  <data name="SecretKey_invalid_length" xml:space="preserve">
+    <value>錯誤的金鑰長度。</value>
+  </data>
 </root>

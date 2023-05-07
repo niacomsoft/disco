@@ -223,6 +223,15 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 错误的密钥长度。 的本地化字符串。
+        /// </summary>
+        internal static string SecretKey_invalid_length {
+            get {
+                return ResourceManager.GetString("SecretKey_invalid_length", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 分布式配置管理服务 Disco 的本地化字符串。
         /// </summary>
         internal static string SmtpSenderOptions_friendly_name {
