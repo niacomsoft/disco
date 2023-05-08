@@ -88,7 +88,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <summary>
         ///     设置发信人登录 SMTP 服务器的用户名。
         /// </summary>
-        /// <param m_connectionName="userName">
+        /// <param m_connectionName="m_userName">
         ///     发信人登录 SMTP 服务器的用户名。
         /// </param>
         /// <returns>

@@ -165,4 +165,7 @@
   <data name="SecretKey_invalid_length" xml:space="preserve">
     <value>错误的密钥长度。</value>
   </data>
+  <data name="AdministratorCredentialsOptions_invalid_intial_pwd" xml:space="preserve">
+    <value>无效的初始登录密码。</value>
+  </data>
 </root>

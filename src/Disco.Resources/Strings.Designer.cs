@@ -61,6 +61,15 @@ namespace Niacomsoft.Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 无效的初始登录密码。 的本地化字符串。
+        /// </summary>
+        internal static string AdministratorCredentialsOptions_invalid_intial_pwd {
+            get {
+                return ResourceManager.GetString("AdministratorCredentialsOptions_invalid_intial_pwd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 错误的资源名称 “@resourceName”。 的本地化字符串。
         /// </summary>
         internal static string ArgumentException_wrong_resource_name {

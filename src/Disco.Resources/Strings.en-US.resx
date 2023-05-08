@@ -157,4 +157,7 @@
   <data name="SecretKey_invalid_length" xml:space="preserve">
     <value>Invalid secret key length.</value>
   </data>
+  <data name="AdministratorCredentialsOptions_invalid_intial_pwd" xml:space="preserve">
+    <value>Invalid initial login password.</value>
+  </data>
 </root>
