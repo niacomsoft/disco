@@ -21,7 +21,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <returns>
         ///     <see cref="NotificationOptions" /> 类型的对象实例。
         /// </returns>
-        public NotificationOptions Build()
+        public virtual NotificationOptions Build()
         {
             return new NotificationOptions
             {
@@ -39,7 +39,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         ///     <see cref="NotificationOptionsBuilder" /> 类型的对象实例。
         /// </returns>
         /// <seealso cref="EmailNotificationOptions" />
-        public NotificationOptionsBuilder WithEmailNotification(EmailNotificationOptions options)
+        public virtual NotificationOptionsBuilder WithEmailNotification(EmailNotificationOptions options)
         {
             m_emailNotification = options;
             return this;
@@ -58,7 +58,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <seealso cref="EmailNotificationOptions" />
         /// <seealso cref="EmailNotificationOptionsBuilder" />
         /// <seealso cref="WithEmailNotification(EmailNotificationOptions)" />
-        public NotificationOptionsBuilder WithEmailNotification(IBuilder<EmailNotificationOptions> builder)
+        public virtual NotificationOptionsBuilder WithEmailNotification(IBuilder<EmailNotificationOptions> builder)
         {
             return WithEmailNotification(builder.Build());
         }

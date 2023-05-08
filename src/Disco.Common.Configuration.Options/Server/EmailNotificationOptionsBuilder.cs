@@ -51,7 +51,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <seealso cref="INetworkCommunicationPort" />
         /// <seealso cref="SmtpProtocolDefaults" />
         /// <seealso cref="SmtpProtocolDefaults.DefaultPort" />
-        public EmailNotificationOptionsBuilder WithDefaultPort()
+        public virtual EmailNotificationOptionsBuilder WithDefaultPort()
             => WithSmtpServerPort(SmtpProtocolDefaults.DefaultPort);
 
         /// <summary>
@@ -82,7 +82,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <seealso cref="IBuilder{T}" />
         /// <seealso cref="SmtpSenderOptions" />
         /// <seealso cref="SmtpSenderOptionsBuilder" />
-        public EmailNotificationOptionsBuilder WithSender(IBuilder<SmtpSenderOptions> builder)
+        public virtual EmailNotificationOptionsBuilder WithSender(IBuilder<SmtpSenderOptions> builder)
             => WithSender(builder.Build());
 
         /// <summary>
@@ -111,7 +111,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         ///     <see cref="EmailNotificationOptionsBuilder" /> 类型的对象实例。
         /// </returns>
         /// <seealso cref="INetworkCommunicationPort" />
-        public EmailNotificationOptionsBuilder WithSmtpServerPort(INetworkCommunicationPort smtpServerPort)
+        public virtual EmailNotificationOptionsBuilder WithSmtpServerPort(INetworkCommunicationPort smtpServerPort)
             => WithSmtpServerPort(smtpServerPort.Value);
 
         /// <summary>
@@ -138,7 +138,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Server
         /// <seealso cref="INetworkCommunicationPort" />
         /// <seealso cref="SmtpProtocolDefaults" />
         /// <seealso cref="SmtpProtocolDefaults.SslProtocolPort" />
-        public EmailNotificationOptionsBuilder WithSslPort()
+        public virtual EmailNotificationOptionsBuilder WithSslPort()
             => WithSmtpServerPort(SmtpProtocolDefaults.SslProtocolPort);
 
         /// <summary>
