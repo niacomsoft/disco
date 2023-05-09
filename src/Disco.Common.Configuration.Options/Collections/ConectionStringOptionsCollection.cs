@@ -22,12 +22,13 @@ namespace Niacomsoft.Disco.Configuration.Options.Collections
     /// <seealso cref="IList{T}" />
     /// <seealso cref="List{T}" />
     /// <seealso cref="ConnectionStringOptions" />
-    public sealed class ConectionStringOptionsCollection : List<ConnectionStringOptions>, IList<ConnectionStringOptions>
+    public sealed class ConnectionStringOptionsCollection
+        : List<ConnectionStringOptions>, IList<ConnectionStringOptions>
     {
         /// <summary>
         ///     初始化 <see cref="ConnectionStringCollection" /> 的新实例。
         /// </summary>
-        public ConectionStringOptionsCollection() : base()
+        public ConnectionStringOptionsCollection() : base()
         {
         }
 
@@ -38,7 +39,7 @@ namespace Niacomsoft.Disco.Configuration.Options.Collections
         ///     连接串配置选项集合。
         /// </param>
         /// <seealso cref="IEnumerable{T}" />
-        public ConectionStringOptionsCollection(IEnumerable<ConnectionStringOptions> options) : base(options)
+        public ConnectionStringOptionsCollection(IEnumerable<ConnectionStringOptions> options) : base(options)
         {
         }
 
