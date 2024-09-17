@@ -1,0 +1,46 @@
+{
+  "name": "disco",
+  "version": "0.0.1-Build.0",
+  "description": "分布式配置管理服务 Distributed Configuration Management Service - Disco!",
+  "main": "index.js",
+  "scripts": {
+    "release:patch-dryrun": "standard-version -r patch -i CHANGELOG.md --dry-run",
+    "release:patch": "standard-version -r patch -i CHANGELOG.md",
+    "release:minor-dryrun": "standard-version -r minor -i CHANGELOG.md --dry-run",
+    "release:minor": "standard-version -r minor -i CHANGELOG.md",
+    "release:major-dryrun": "standard-version -r major -i CHANGELOG.md --dry-run",
+    "release:major": "standard-version -r major -i CHANGELOG.md",
+    "pre-release:patch-dryrun": "standard-version -r patch -p Build -i CHANGELOG.md --dry-run",
+    "pre-release:patch": "standard-version -r patch -p Build -i CHANGELOG.md",
+    "pre-release:minor-dryrun": "standard-version -r minor -p Build -i CHANGELOG.md --dry-run",
+    "pre-release:minor": "standard-version -r minor -p Build -i CHANGELOG.md",
+    "pre-release:major-dryrun": "standard-version -r major -p Build -i CHANGELOG.md --dry-run",
+    "pre-release:major": "standard-version -r major -p Build -i CHANGELOG.md",
+    "git:push": "git push --tags && git push --all",
+    "dotnet:release": "dotnet tool restore && dotnet tool run nbgv prepare-release --project ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://codeup.aliyun.com/niacom/open/disco.git"
+  },
+  "keywords": [
+    "disco",
+    "dotnet",
+    "dotnet-core",
+    "dotnet-standard",
+    "dotnet-framework",
+    "aspnet",
+    "aspnetcore",
+    "windows",
+    "linux"
+  ],
+  "author": "Wang Yucai",
+  "license": "MIT",
+  "volta": {
+    "node": "22.8.0",
+    "pnpm": "9.10.0"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
