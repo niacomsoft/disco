@@ -1,6 +1,6 @@
 # README
 
-<img src="D:\Repo\@me-disco\assets\git-repo.png" alt="git-repo" style="zoom:15%;" />
+<img src="assets/git-repo.png" alt="git-repo" style="zoom:15%;" />
 
 ## 什么是 “Disco” ? What is "Disco"?
 
