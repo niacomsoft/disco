@@ -17,6 +17,8 @@
     "pre-release:major-dryrun": "standard-version -r major -p Build -i CHANGELOG.md --dry-run",
     "pre-release:major": "standard-version -r major -p Build -i CHANGELOG.md",
     "git:push": "git push --tags && git push --all",
+    "git:push:mirrors": "git push mirrors --tags && git push mirrors --all",
+    "git:push:all": "npm run git:push && npm run git:push:mirrors",
     "dotnet:release": "dotnet tool restore && dotnet tool run nbgv prepare-release --project ./"
   },
   "repository": {
