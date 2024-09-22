@@ -12,7 +12,9 @@
 
 ## 文档目录 Catalog
 
-[功能描述 Feature Description](docs/feature-description.md)
+- [功能描述 Feature Description](docs/feature-description.md)
+  - 基础开发框架 Disco Framework
+    - [Disco.Localization.Resources](src/disco-fx/Disco.Localization.Resources/README.md)
 
 ## 开源协议 LICENSE
 
