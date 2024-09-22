@@ -1,0 +1,35 @@
+<Project>
+  <PropertyGroup>
+    <TargetFrameworks>net45;netstandard2.0;</TargetFrameworks>
+    <AssemblyName>Disco</AssemblyName>
+    <RootNamespace>Disco</RootNamespace>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <BaseOutputPath>..\..\..\Build</BaseOutputPath>
+    <PackageId>$(AssemblyName)</PackageId>
+    <Title>Distributed Configuration Management Service</Title>
+    <Version>$(AssemblyVersion)</Version>
+    <Authors>Wang Yucai</Authors>
+    <Product>Disco</Product>
+    <Description>分布式配置管理服务 Distributed Configuration Management Service</Description>
+    <Copyright>COPYRIGHT © 2006 - 2024 WANG YUCAI. ALL RIGHTS RESERVED.</Copyright>
+    <PackageIcon>git-repo.png</PackageIcon>
+    <PackageReadmeFile></PackageReadmeFile>
+    <RepositoryUrl></RepositoryUrl>
+    <GeneratePackageOnBuild Condition="'$(Configuration)' == 'Release'">True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\assets\git-repo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.7.77-alpha">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
