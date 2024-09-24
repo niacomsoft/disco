@@ -449,4 +449,4 @@ __pycache__/
 [Bb]uild/
 
 # Other
-docs/**/*.bkp
+*.bkp

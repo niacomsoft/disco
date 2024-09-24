@@ -8,13 +8,7 @@
 >
 > "Disco" is a **distributed configuration management platform** developed based on `Microsoft .NET`.
 
-![Architecture](docs/Design/Disco-Architecture.jpg)
-
-## 文档目录 Catalog
-
-- [功能描述 Feature Description](docs/feature-description.md)
-  - 基础开发框架 Disco Framework
-    - [Disco.Localization.Resources](src/disco-fx/Disco.Localization.Resources/README.md)
+![Architecture](assets/Design/Disco-Architecture.jpg)
 
 ## 开源协议 LICENSE
 
