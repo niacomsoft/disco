@@ -61,38 +61,20 @@ namespace Disco.Resources {
         }
         
         /// <summary>
-        ///   查找类似 Cancel 的本地化字符串。
+        ///   查找类似 Invalid method parameter value: NULL. 的本地化字符串。
         /// </summary>
-        public static string Cancel {
+        public static string ArgumentNullException_default_message {
             get {
-                return ResourceManager.GetString("Cancel", resourceCulture);
+                return ResourceManager.GetString("ArgumentNullException_default_message", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查找类似 Choose a file 的本地化字符串。
+        ///   查找类似 Invalid method parameter &quot;{0}&quot; value: NULL. 的本地化字符串。
         /// </summary>
-        public static string Choose_File {
+        public static string ArgumentNullException_default_message_with_argumentname {
             get {
-                return ResourceManager.GetString("Choose_File", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Copy 的本地化字符串。
-        /// </summary>
-        public static string Copy {
-            get {
-                return ResourceManager.GetString("Copy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Create New 的本地化字符串。
-        /// </summary>
-        public static string Create_New {
-            get {
-                return ResourceManager.GetString("Create_New", resourceCulture);
+                return ResourceManager.GetString("ArgumentNullException_default_message_with_argumentname", resourceCulture);
             }
         }
         
@@ -102,24 +84,6 @@ namespace Disco.Resources {
         public static string Debug {
             get {
                 return ResourceManager.GetString("Debug", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Download 的本地化字符串。
-        /// </summary>
-        public static string Download {
-            get {
-                return ResourceManager.GetString("Download", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Duplicate 的本地化字符串。
-        /// </summary>
-        public static string Duplicate {
-            get {
-                return ResourceManager.GetString("Duplicate", resourceCulture);
             }
         }
         
@@ -142,20 +106,20 @@ namespace Disco.Resources {
         }
         
         /// <summary>
-        ///   查找类似 Export 的本地化字符串。
+        ///   查找类似 Disco throws an unhandled runtime exception. 的本地化字符串。
         /// </summary>
-        public static string Export {
+        public static string Exception_default_message {
             get {
-                return ResourceManager.GetString("Export", resourceCulture);
+                return ResourceManager.GetString("Exception_default_message", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查找类似 Import 的本地化字符串。
+        ///   查找类似 When &quot;{0}&quot;, &quot;Disco&quot; throws an unhandled exception. 的本地化字符串。
         /// </summary>
-        public static string Import {
+        public static string Exception_default_message_with_reason {
             get {
-                return ResourceManager.GetString("Import", resourceCulture);
+                return ResourceManager.GetString("Exception_default_message_with_reason", resourceCulture);
             }
         }
         
@@ -165,42 +129,6 @@ namespace Disco.Resources {
         public static string Information {
             get {
                 return ResourceManager.GetString("Information", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Ok 的本地化字符串。
-        /// </summary>
-        public static string Ok {
-            get {
-                return ResourceManager.GetString("Ok", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Open 的本地化字符串。
-        /// </summary>
-        public static string Open {
-            get {
-                return ResourceManager.GetString("Open", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Save 的本地化字符串。
-        /// </summary>
-        public static string Save {
-            get {
-                return ResourceManager.GetString("Save", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Save As 的本地化字符串。
-        /// </summary>
-        public static string Save_As {
-            get {
-                return ResourceManager.GetString("Save_As", resourceCulture);
             }
         }
         
@@ -219,15 +147,6 @@ namespace Disco.Resources {
         public static string Trace {
             get {
                 return ResourceManager.GetString("Trace", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Upload 的本地化字符串。
-        /// </summary>
-        public static string Upload {
-            get {
-                return ResourceManager.GetString("Upload", resourceCulture);
             }
         }
         

@@ -97,12 +97,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Ok" xml:space="preserve">
-    <value>Ok</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
   <data name="Debug" xml:space="preserve">
     <value>Debug</value>
   </data>
@@ -124,37 +118,16 @@
   <data name="Exception" xml:space="preserve">
     <value>Exception</value>
   </data>
-  <data name="Create_New" xml:space="preserve">
-    <value>Create New</value>
+  <data name="Exception_default_message" xml:space="preserve">
+    <value>Disco throws an unhandled runtime exception.</value>
   </data>
-  <data name="Copy" xml:space="preserve">
-    <value>Copy</value>
+  <data name="Exception_default_message_with_reason" xml:space="preserve">
+    <value>When "{0}", "Disco" throws an unhandled exception.</value>
   </data>
-  <data name="Duplicate" xml:space="preserve">
-    <value>Duplicate</value>
+  <data name="ArgumentNullException_default_message" xml:space="preserve">
+    <value>Invalid method parameter value: NULL.</value>
   </data>
-  <data name="Open" xml:space="preserve">
-    <value>Open</value>
-  </data>
-  <data name="Save" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="Save_As" xml:space="preserve">
-    <value>Save As</value>
-  </data>
-  <data name="Export" xml:space="preserve">
-    <value>Export</value>
-  </data>
-  <data name="Import" xml:space="preserve">
-    <value>Import</value>
-  </data>
-  <data name="Choose_File" xml:space="preserve">
-    <value>Choose a file</value>
-  </data>
-  <data name="Upload" xml:space="preserve">
-    <value>Upload</value>
-  </data>
-  <data name="Download" xml:space="preserve">
-    <value>Download</value>
+  <data name="ArgumentNullException_default_message_with_argumentname" xml:space="preserve">
+    <value>Invalid method parameter "{0}" value: NULL.</value>
   </data>
 </root>

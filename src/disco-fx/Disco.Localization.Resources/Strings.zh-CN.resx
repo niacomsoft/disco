@@ -97,12 +97,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Ok" xml:space="preserve">
-    <value>确认</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>取消</value>
-  </data>
   <data name="Debug" xml:space="preserve">
     <value>调试</value>
   </data>
@@ -124,37 +118,16 @@
   <data name="Exception" xml:space="preserve">
     <value>异常</value>
   </data>
-  <data name="Create_New" xml:space="preserve">
-    <value>新建</value>
+  <data name="Exception_default_message" xml:space="preserve">
+    <value>“Disco”抛出了一个未处理的运行时异常。</value>
   </data>
-  <data name="Copy" xml:space="preserve">
-    <value>复制</value>
+  <data name="Exception_default_message_with_reason" xml:space="preserve">
+    <value>当 “{0}” 时，“Disco”引发了未处理的异常。</value>
   </data>
-  <data name="Duplicate" xml:space="preserve">
-    <value>创建一个副本</value>
+  <data name="ArgumentNullException_default_message" xml:space="preserve">
+    <value>无效的方法参数值：NULL。</value>
   </data>
-  <data name="Open" xml:space="preserve">
-    <value>打开</value>
-  </data>
-  <data name="Save" xml:space="preserve">
-    <value>保存</value>
-  </data>
-  <data name="Save_As" xml:space="preserve">
-    <value>另存为</value>
-  </data>
-  <data name="Export" xml:space="preserve">
-    <value>导出</value>
-  </data>
-  <data name="Import" xml:space="preserve">
-    <value>导入</value>
-  </data>
-  <data name="Choose_File" xml:space="preserve">
-    <value>选择一个文件</value>
-  </data>
-  <data name="Upload" xml:space="preserve">
-    <value>上传</value>
-  </data>
-  <data name="Download" xml:space="preserve">
-    <value>下载</value>
+  <data name="ArgumentNullException_default_message_with_argumentname" xml:space="preserve">
+    <value>无效的方法参数 “{0}” 值：NULL。</value>
   </data>
 </root>
