@@ -6,7 +6,7 @@
 namespace Disco
 {
   /// <summary>
-  ///   提供了断言相关的工具方法。
+  ///   提供了断言相关的静态 <see langword="static" /> 方法。
   /// </summary>
   public static partial class AssertUtilities
   {
