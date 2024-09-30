@@ -4,6 +4,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RootNamespace>$(RootNamespace).Resources</RootNamespace>
     <AssemblyName>$(AssemblyName).Localization.Resources</AssemblyName>
+    <PackageId>$(AssemblyName).Localization.Resources</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

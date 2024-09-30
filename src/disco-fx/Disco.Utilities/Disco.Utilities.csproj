@@ -4,6 +4,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RootNamespace>$(RootNamespace)</RootNamespace>
     <AssemblyName>$(AssemblyName).Utilities</AssemblyName>
+    <PackageId>$(AssemblyName).Utilities</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
