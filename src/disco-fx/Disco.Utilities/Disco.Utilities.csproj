@@ -13,4 +13,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Disco.Localization.Resources\Disco.Localization.Resources.csproj" />
+  </ItemGroup>
+
 </Project>
