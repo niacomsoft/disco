@@ -6,3 +6,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Disco.ExceptionHelper.ThrowIf``1(System.Boolean,System.Object[])")]
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Disco.ObjectExtensions.IfNull(System.Object,System.String)")]
 [assembly: SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~M:Disco.DateTimeExtensions.FriendlyText(System.DateTime)~System.String")]
+[assembly: SuppressMessage("Design", "Ex0101:Member accessor may throw undocumented exception", Justification = "<挂起>", Scope = "member", Target = "~P:Disco.Text.DefaultEncodingProvider.DefaultEncoding")]
