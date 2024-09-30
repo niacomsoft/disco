@@ -5,7 +5,6 @@
 
 namespace Disco
 {
-  using Disco.Diagnostics;
   using Disco.Resources;
 
   using System;
@@ -16,6 +15,20 @@ namespace Disco
   public static class ObjectExtensions
   {
     #region Methods
+
+    /// <summary>
+    ///   当 <paramref name="me" /> 等于 <see langword="null" /> 时，将引发一个 <see cref="ArgumentNullException" /> 类型的异常。
+    /// </summary>
+    /// <param name="me">
+    ///   <see cref="object" /> 类型的对象实例。
+    /// </param>
+    /// <param name="paraName">
+    ///   参数名称。
+    /// </param>
+    public static void IfNull(this object me, string paraName = null)
+    {
+      ExceptionHelper.ThrowIf<ArgumentNullException>(me.IsNull(), paraName, string.Format(Strings.ArgumentNullException_default_message_with_argumentname, paraName));
+    }
 
     /// <summary>
     ///   当 <paramref name="me" /> 等于 <see langword="null" /> 时，返回 <see langword="true" />；否则返回 <see langword="false" /> 。
