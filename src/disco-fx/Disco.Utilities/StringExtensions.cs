@@ -13,7 +13,7 @@ namespace Disco
   /// <summary>
   ///   为 <see cref="string" /> 类型提供了扩展方法。
   /// </summary>
-  public static class StringExtensions
+  public static partial class StringExtensions
   {
     #region Methods
 
@@ -63,7 +63,7 @@ namespace Disco
     /// <param name="start">
     ///   需要解码的字节索引。
     /// </param>
-    /// <param name="offset">
+    /// <param name="length">
     ///   需要解码的字节长度。
     /// </param>
     /// <returns>
@@ -75,10 +75,10 @@ namespace Disco
     /// <exception cref="OverflowException">
     ///   当访问 <c> <paramref name="me" />.Length </c> 属性时，可能引发此类型的异常。
     /// </exception>
-    public static string GetString(this byte[] me, Encoding encoding, int start = 0, int? offset = null)
+    public static string GetString(this byte[] me, Encoding encoding, int start = 0, int? length = null)
     {
       encoding.IfNull(nameof(encoding));
-      return me.HasItems() ? encoding.GetString(me, start, offset.DefaultIf(me.Length)) : null;
+      return me.HasItems() ? encoding.GetString(me, start, length.DefaultIf(me.Length)) : null;
     }
 
     /// <summary>
@@ -90,7 +90,7 @@ namespace Disco
     /// <param name="start">
     ///   需要解码的字节索引。
     /// </param>
-    /// <param name="offset">
+    /// <param name="length">
     ///   需要解码的字节长度。
     /// </param>
     /// <returns>
@@ -99,9 +99,9 @@ namespace Disco
     ///     当字节数组 <paramref name="me" /> 等于 <see langword="null" /> 或者长度等于 <c> 0 </c> 时，返回 <see langword="null" />。
     ///   </para>
     /// </returns>
-    public static string GetString(this byte[] me, int start = 0, int? offset = null)
+    public static string GetString(this byte[] me, int start = 0, int? length = null)
     {
-      return me.GetString(DefaultEncodingProvider.DefaultEncoding, start, offset);
+      return me.GetString(DefaultEncodingProvider.DefaultEncoding, start, length);
     }
 
     #endregion Methods
