@@ -79,6 +79,60 @@ namespace Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 dd/MM/yyyy 的本地化字符串。
+        /// </summary>
+        public static string DateTime_date_only {
+            get {
+                return ResourceManager.GetString("DateTime_date_only", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Just now 的本地化字符串。
+        /// </summary>
+        public static string DateTime_just_now {
+            get {
+                return ResourceManager.GetString("DateTime_just_now", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 dd/MM 的本地化字符串。
+        /// </summary>
+        public static string DateTime_same_year {
+            get {
+                return ResourceManager.GetString("DateTime_same_year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} days ago 的本地化字符串。
+        /// </summary>
+        public static string DateTime_several_days_ago {
+            get {
+                return ResourceManager.GetString("DateTime_several_days_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} hours ago 的本地化字符串。
+        /// </summary>
+        public static string DateTime_several_hours_ago {
+            get {
+                return ResourceManager.GetString("DateTime_several_hours_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} minutes ago 的本地化字符串。
+        /// </summary>
+        public static string DateTime_several_minutes_ago {
+            get {
+                return ResourceManager.GetString("DateTime_several_minutes_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Debug 的本地化字符串。
         /// </summary>
         public static string Debug {
