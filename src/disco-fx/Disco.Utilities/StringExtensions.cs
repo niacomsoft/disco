@@ -5,6 +5,7 @@
 
 namespace Disco
 {
+  using Disco.Diagnostics;
   using Disco.Text;
 
   using System;
@@ -16,6 +17,81 @@ namespace Disco
   public static partial class StringExtensions
   {
     #region Methods
+
+    /// <summary>
+    ///   当字符串 <paramref name="me" /> 等于 <see langword="null" /> 时，返回 <paramref name="default" />；否则返回 <paramref name="me" />。
+    /// </summary>
+    /// <param name="me">
+    ///   字符串。
+    /// </param>
+    /// <param name="default">
+    ///   当字符串 <paramref name="me" /> 等于 <see langword="null" /> 时返回的默认字符串。
+    /// </param>
+    /// <returns>
+    ///   当字符串 <paramref name="me" /> 等于 <see langword="null" /> 时，返回 <paramref name="default" />；否则返回 <paramref name="me" />。
+    /// </returns>
+    public static string DefaultIfNull(this string me, string @default)
+    {
+      return Doctor.DebugIf(me.IsNull(), $"[{nameof(StringExtensions)}]: The string parameter \"me\" is equal to NULL, the default value ({@default}) will be used instead.")
+        ? @default
+        : me;
+    }
+
+    /// <summary>
+    ///   当字符串 <paramref name="me" /> 等于 <see langword="null" /> 或 <see cref="string.Empty" /> 时，返回
+    ///   <paramref name="default" />；否则返回 <paramref name="me" />。
+    /// </summary>
+    /// <param name="me">
+    ///   字符串。
+    /// </param>
+    /// <param name="default">
+    ///   当字符串 <paramref name="me" /> 等于 <see langword="null" /> 或 <see cref="string.Empty" /> 时返回的默认字符串。
+    /// </param>
+    /// <returns>
+    ///   当字符串 <paramref name="me" /> 等于 <see langword="null" /> 或 <see cref="string.Empty" /> 时，返回
+    ///   <paramref name="default" />；否则返回 <paramref name="me" />。
+    /// </returns>
+    public static string DefaultIfNullOrEmpty(this string me, string @default)
+    {
+      return Doctor.DebugIf(string.IsNullOrEmpty(me), $"[{nameof(StringExtensions)}]: The string parameter \"me\" is equal to NULL or empty, the default value ({@default}) will be used instead.")
+        ? @default
+        : me;
+    }
+
+    /// <summary>
+    ///   当字符串 <paramref name="me" /> 等于 <see langword="null" />、 <see cref="string.Empty" /> 或空格符时，返回
+    ///   <paramref name="default" />；否则返回 <paramref name="me" />。
+    /// </summary>
+    /// <param name="me">
+    ///   字符串。
+    /// </param>
+    /// <param name="default">
+    ///   当字符串 <paramref name="me" /> 等于 <see langword="null" />、 <see cref="string.Empty" /> 或空格符时返回的默认字符串。
+    /// </param>
+    /// <returns>
+    ///   当字符串 <paramref name="me" /> 等于 <see langword="null" />、 <see cref="string.Empty" /> 或空格符时，返回
+    ///   <paramref name="default" />；否则返回 <paramref name="me" />。
+    /// </returns>
+    public static string DefaultIfNullOrWhiteSpace(this string me, string @default)
+    {
+      return Doctor.DebugIf(string.IsNullOrWhiteSpace(me), $"[{nameof(StringExtensions)}]: The string parameter \"me\" is equal to NULL or empty or white-space, the default value ({@default}) will be used instead.")
+        ? @default
+        : me;
+    }
+
+    /// <summary>
+    ///   使用默认的编码 <see cref="DefaultEncodingProvider.DefaultEncoding" /> 获取字符串 <paramref name="me" /> 的字节数组。
+    /// </summary>
+    /// <param name="me">
+    ///   字符串。
+    /// </param>
+    /// <returns>
+    ///   字节数组。
+    /// </returns>
+    public static byte[] GetBytes(this string me)
+    {
+      return me.GetBytes(DefaultEncodingProvider.DefaultEncoding);
+    }
 
     /// <summary>
     ///   使用指定的编码 <paramref name="encoding" /> 获取字符串 <paramref name="me" /> 的字节数组。
@@ -34,20 +110,6 @@ namespace Disco
     {
       encoding.IfNull(nameof(encoding));
       return string.IsNullOrEmpty(me) ? null : encoding.GetBytes(me);
-    }
-
-    /// <summary>
-    ///   使用默认的编码 <see cref="DefaultEncodingProvider.DefaultEncoding" /> 获取字符串 <paramref name="me" /> 的字节数组。
-    /// </summary>
-    /// <param name="me">
-    ///   字符串。
-    /// </param>
-    /// <returns>
-    ///   字节数组。
-    /// </returns>
-    public static byte[] GetBytes(this string me)
-    {
-      return me.GetBytes(DefaultEncodingProvider.DefaultEncoding);
     }
 
     /// <summary>
