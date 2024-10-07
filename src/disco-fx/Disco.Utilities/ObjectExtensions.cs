@@ -17,6 +17,23 @@ namespace Disco
     #region Methods
 
     /// <summary>
+    ///   当 <paramref name="me" /> 等于 <see langword="null" /> 时，返回 <paramref name="default" /> 默认值。
+    /// </summary>
+    /// <param name="me">
+    ///   <see cref="object" /> 类型的对象实例。
+    /// </param>
+    /// <param name="default">
+    ///   默认值方法。
+    /// </param>
+    /// <returns>
+    ///   当 <paramref name="me" /> 等于 <see langword="null" /> 时，返回 <paramref name="default" /> 默认值。
+    /// </returns>
+    public static object DefaultIfNull(this object me, Func<object> @default)
+    {
+      return me.IsNull() ? @default() : me;
+    }
+
+    /// <summary>
     ///   当 <paramref name="me" /> 等于 <see langword="null" /> 时，将引发一个 <see cref="ArgumentNullException" /> 类型的异常。
     /// </summary>
     /// <param name="me">

@@ -148,4 +148,10 @@
   <data name="DateTime_date_only" xml:space="preserve">
     <value>dd/MM/yyyy</value>
   </data>
+  <data name="ArgumentException_empty_string" xml:space="preserve">
+    <value>The string parameter "{0}" is not allowed to be NULL or empty.</value>
+  </data>
+  <data name="ArgumentException_empty_or_whitespace" xml:space="preserve">
+    <value>The string parameter "{0}" is not allowed to be NULL or empty or white-spaces.</value>
+  </data>
 </root>

@@ -148,4 +148,10 @@
   <data name="DateTime_date_only" xml:space="preserve">
     <value>yyyy年MM月dd日</value>
   </data>
+  <data name="ArgumentException_empty_string" xml:space="preserve">
+    <value>字符串参数“{0}”不允许为 NULL 或空白。</value>
+  </data>
+  <data name="ArgumentException_empty_or_whitespace" xml:space="preserve">
+    <value>字符串参数“{0}”不允许为 NULL 或空格符。</value>
+  </data>
 </root>

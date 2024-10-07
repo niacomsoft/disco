@@ -61,6 +61,24 @@ namespace Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 The string parameter &quot;{0}&quot; is not allowed to be NULL or empty or white-spaces. 的本地化字符串。
+        /// </summary>
+        public static string ArgumentException_empty_or_whitespace {
+            get {
+                return ResourceManager.GetString("ArgumentException_empty_or_whitespace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The string parameter &quot;{0}&quot; is not allowed to be NULL or empty. 的本地化字符串。
+        /// </summary>
+        public static string ArgumentException_empty_string {
+            get {
+                return ResourceManager.GetString("ArgumentException_empty_string", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Invalid method parameter value: NULL. 的本地化字符串。
         /// </summary>
         public static string ArgumentNullException_default_message {
