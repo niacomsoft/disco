@@ -154,4 +154,7 @@
   <data name="ArgumentException_empty_or_whitespace" xml:space="preserve">
     <value>字符串参数“{0}”不允许为 NULL 或空格符。</value>
   </data>
+  <data name="ArgumentOutOfRangeException_invalid_network_port" xml:space="preserve">
+    <value>无效的网络端口号“{0}”。端口号必须是一个介于 0 ~ 65535 之间的整型值。</value>
+  </data>
 </root>
