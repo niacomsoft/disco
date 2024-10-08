@@ -97,6 +97,15 @@ namespace Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 Invalid network port number &quot;{0}&quot;. The port number must be an integer value between 0 ~ 65535. 的本地化字符串。
+        /// </summary>
+        public static string ArgumentOutOfRangeException_invalid_network_port {
+            get {
+                return ResourceManager.GetString("ArgumentOutOfRangeException_invalid_network_port", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 dd/MM/yyyy 的本地化字符串。
         /// </summary>
         public static string DateTime_date_only {

@@ -154,4 +154,7 @@
   <data name="ArgumentException_empty_or_whitespace" xml:space="preserve">
     <value>The string parameter "{0}" is not allowed to be NULL or empty or white-spaces.</value>
   </data>
+  <data name="ArgumentOutOfRangeException_invalid_network_port" xml:space="preserve">
+    <value>Invalid network port number "{0}". The port number must be an integer value between 0 ~ 65535.</value>
+  </data>
 </root>
