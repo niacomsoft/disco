@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RootNamespace>$(RootNamespace).Models</RootNamespace>
+    <AssemblyName>$(AssemblyName).Models.Abstractions</AssemblyName>
+    <PackageId>$(AssemblyName).Models.Abstractions</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
