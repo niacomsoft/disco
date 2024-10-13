@@ -306,4 +306,24 @@ namespace Disco.Logging
 
     #endregion Methods
   }
+
+  /// <summary>
+  ///   提供了记录运行时日志相关的抽象 <see langword="abstract" /> 方法。
+  /// </summary>
+  /// <typeparam name="TCategoryName">
+  ///   标识运行时日志类别名称的类型。
+  /// </typeparam>
+  public abstract class LogWriter<TCategoryName> : LogWriter, ILogWriter<TCategoryName>
+  {
+    #region Constructors
+
+    /// <summary>
+    ///   初始化 <see cref="LogWriter{TCategoryName}" /> 类的新实例。
+    /// </summary>
+    protected LogWriter()
+    {
+    }
+
+    #endregion Constructors
+  }
 }
