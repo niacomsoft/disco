@@ -157,4 +157,10 @@
   <data name="ArgumentOutOfRangeException_invalid_network_port" xml:space="preserve">
     <value>Invalid network port number "{0}". The port number must be an integer value between 0 ~ 65535.</value>
   </data>
+  <data name="Exception_get_description_without_cause" xml:space="preserve">
+    <value>When "Disco" tries to call the "{0}" method, an exception of type "{1}" is thrown: {2}</value>
+  </data>
+  <data name="Exception_get_description_with_cause" xml:space="preserve">
+    <value>{0}, a "{1}" type exception is thrown: {2}</value>
+  </data>
 </root>

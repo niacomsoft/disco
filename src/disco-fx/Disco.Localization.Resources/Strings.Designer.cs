@@ -205,6 +205,24 @@ namespace Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 {0}, a &quot;{1}&quot; type exception is thrown: {2} 的本地化字符串。
+        /// </summary>
+        public static string Exception_get_description_with_cause {
+            get {
+                return ResourceManager.GetString("Exception_get_description_with_cause", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 When &quot;Disco&quot; tries to call the &quot;{0}&quot; method, an exception of type &quot;{1}&quot; is thrown: {2} 的本地化字符串。
+        /// </summary>
+        public static string Exception_get_description_without_cause {
+            get {
+                return ResourceManager.GetString("Exception_get_description_without_cause", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Information 的本地化字符串。
         /// </summary>
         public static string Information {

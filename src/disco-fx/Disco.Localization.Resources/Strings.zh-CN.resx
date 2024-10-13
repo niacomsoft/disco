@@ -157,4 +157,10 @@
   <data name="ArgumentOutOfRangeException_invalid_network_port" xml:space="preserve">
     <value>无效的网络端口号“{0}”。端口号必须是一个介于 0 ~ 65535 之间的整型值。</value>
   </data>
+  <data name="Exception_get_description_without_cause" xml:space="preserve">
+    <value>当“Disco”尝试调用 “{0}” 方法时，引发了一个 “{1}” 类型的异常：{2}</value>
+  </data>
+  <data name="Exception_get_description_with_cause" xml:space="preserve">
+    <value>{0}，引发了一个 “{1}” 类型的异常：{2}</value>
+  </data>
 </root>
