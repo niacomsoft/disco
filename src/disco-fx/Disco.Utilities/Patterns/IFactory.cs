@@ -13,7 +13,7 @@ namespace Disco.Patterns
   /// <typeparam name="T">
   ///   实例类型。
   /// </typeparam>
-  public interface IFactory<T> where T : class, new()
+  public interface IFactory<T> where T : class
   {
     #region Methods
 
