@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disco.Utilities", "disco-fx
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disco.Models.Abstractions", "disco-fx\Disco.Models.Abstractions\Disco.Models.Abstractions.csproj", "{D95C2172-C3BD-4626-AE6B-F0514D432501}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disco.Logging.Abstractions", "disco-fx\Disco.Logging.Abstractions\Disco.Logging.Abstractions.csproj", "{635A9202-47CB-467F-B991-394F479F6209}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D95C2172-C3BD-4626-AE6B-F0514D432501}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D95C2172-C3BD-4626-AE6B-F0514D432501}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D95C2172-C3BD-4626-AE6B-F0514D432501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{635A9202-47CB-467F-B991-394F479F6209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{635A9202-47CB-467F-B991-394F479F6209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{635A9202-47CB-467F-B991-394F479F6209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{635A9202-47CB-467F-B991-394F479F6209}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
