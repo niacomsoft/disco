@@ -12,14 +12,14 @@ namespace Disco.Logging
   /// <summary>
   ///   提供了记录运行时日志相关的抽象 <see langword="abstract" /> 方法。
   /// </summary>
-  public abstract class LogWriter : ILogWriter
+  public abstract class LogWriterBase : ILogWriter
   {
     #region Constructors
 
     /// <summary>
-    ///   初始化 <see cref="LogWriter" /> 类的新实例。
+    ///   初始化 <see cref="LogWriterBase" /> 类的新实例。
     /// </summary>
-    protected LogWriter()
+    protected LogWriterBase()
     {
     }
 
@@ -313,14 +313,14 @@ namespace Disco.Logging
   /// <typeparam name="TCategoryName">
   ///   标识运行时日志类别名称的类型。
   /// </typeparam>
-  public abstract class LogWriter<TCategoryName> : LogWriter, ILogWriter<TCategoryName>
+  public abstract class LogWriterBase<TCategoryName> : LogWriterBase, ILogWriter<TCategoryName>
   {
     #region Constructors
 
     /// <summary>
-    ///   初始化 <see cref="LogWriter{TCategoryName}" /> 类的新实例。
+    ///   初始化 <see cref="LogWriterBase{TCategoryName}" /> 类的新实例。
     /// </summary>
-    protected LogWriter()
+    protected LogWriterBase()
     {
     }
 
