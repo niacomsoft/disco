@@ -163,4 +163,7 @@
   <data name="Exception_get_description_with_cause" xml:space="preserve">
     <value>{0}，引发了一个 “{1}” 类型的异常：{2}</value>
   </data>
+  <data name="FileNotFoundException_default_message" xml:space="preserve">
+    <value>未找到文件 “{0}”。</value>
+  </data>
 </root>

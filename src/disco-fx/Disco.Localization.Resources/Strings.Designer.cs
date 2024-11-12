@@ -223,6 +223,15 @@ namespace Disco.Resources {
         }
         
         /// <summary>
+        ///   查找类似 The file &quot;{0}&quot; not found. 的本地化字符串。
+        /// </summary>
+        public static string FileNotFoundException_default_message {
+            get {
+                return ResourceManager.GetString("FileNotFoundException_default_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Information 的本地化字符串。
         /// </summary>
         public static string Information {
