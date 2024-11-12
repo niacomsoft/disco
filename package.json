@@ -39,8 +39,8 @@
   "author": "Wang Yucai",
   "license": "MIT",
   "volta": {
-    "node": "22.8.0",
-    "pnpm": "9.10.0"
+    "node": "22.11.0",
+    "pnpm": "9.12.3"
   },
   "devDependencies": {
     "standard-version": "^9.5.0"
