@@ -5,10 +5,20 @@
 
 namespace Disco.IO
 {
+  using System.IO;
+
   /// <summary>
   ///   提供了路径分段符相关的静态 <see langword="static" /> 方法。
   /// </summary>
-  public static partial class PathSegment
+  public static class PathSegment
   {
+    #region Fields
+
+    /// <summary>
+    ///   Windows 操作系统中路径分段符。
+    /// </summary>
+    public static readonly char Value = Path.DirectorySeparatorChar;
+
+    #endregion Fields
   }
 }
