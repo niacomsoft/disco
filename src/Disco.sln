@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disco.Logging", "disco-fx\D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disco.Logging.Providers.NLog.Integration", "disco-fx\Disco.Logging.Providers.NLog.Integration\Disco.Logging.Providers.NLog.Integration.csproj", "{61B06622-6435-4EAB-9BB2-4351D2864EB7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{B46D9E87-A220-4378-BC46-37D3AC7B8CAE}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shared.Configuration.NLog", "shared\Shared.Configuration.NLog\Shared.Configuration.NLog.shproj", "{757C84C6-20CF-491D-A13A-F3BE98CB5459}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,7 +53,13 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{757C84C6-20CF-491D-A13A-F3BE98CB5459} = {B46D9E87-A220-4378-BC46-37D3AC7B8CAE}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {109F754F-4F20-493A-BB20-A1D87EDBF98D}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		shared\Shared.Configuration.NLog\Shared.Configuration.NLog.projitems*{757c84c6-20cf-491d-a13a-f3be98cb5459}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
